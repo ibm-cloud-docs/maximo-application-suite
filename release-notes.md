@@ -26,17 +26,22 @@ content-type: release-note
 Use these release notes to learn about the latest updates to Maximo Application Suite deployable architecure that are grouped by _date or build number_. Release notes are available for a minimum of three years.
 {: shortdesc}
 
-## April release
+## April 2024
 {: #aprilrelease}
+{: release-note}
+
+### Introducing Maximo Application Suite deployable architecure
+{: #masdeparchi}
 {: release-note}
 
 You can now deploy IBM Maximo Application Suite Core or Maximo Application Suite Core + Maximo Manage by using it's deployable architecure that is listed on {{site.data.keyword.Bluemix_full}} public catalog.
 The deployable architecture includes support for a Red Hat Openshift Kubernetes Service (ROKS) cluster with VPC Gen2 infrastructure.
 
 
-<!-- If you also have a change log for your API or CLI, include the following tip with a link to the change log. -->
+<!-- If you also have a change log for your API or CLI, include the following tip with a link to the change log.
 For information about changes to the _service-name_ API, see [Change log for _service-name_ API](/docs/link-to-change-log).
 {: tip}
+
 
 ## How should I set up my page?
 {: #relnotes-page-setup}

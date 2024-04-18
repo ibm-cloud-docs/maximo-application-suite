@@ -15,17 +15,13 @@ subcollection: maximo-application-suite
 # Planning for Maximo Application Suite deployable architecture
 {: #planning}
 
-Use this topic if you have prerequisites, dependencies, or other information a customer needs to be able to quickly deploy this architecture from the catalog into a project.
-{: shortdesc}
-
-## Preparing to install Maximo Application Suite by using deployable architecture from {{site.data.keyword.Bluemix_full}} public catalog
-{: #preparing}
-
 Before you install IBM® Maximo® Application Suite or Maximo Application Suite Core + Manage, consider your installation preferences such as the type of Maximo Application Suite offering that you prefer.
 The following offering types are supported:
 
 1) Maximo Application Suite Core
 2) Maximo Application Suite Core + Maximo Manage (with internal Db2 deployed on {{site.data.keyword.redhat_openshift_full}} cluster)
+{: shortdesc}
+
 
 ## Prerequisites
 {: #prerequisites}
@@ -49,6 +45,7 @@ refer to the {{site.data.keyword.redhat_openshift_notm}} Container Platform inst
 {: #entitledregkey}
 
 To access your software in the entitled registry, obtain an {{site.data.keyword.Bluemix_short}} Entitled Registry key.
+
 For more information, see [Entitlement keys](https://myibm.ibm.com/products-services/containerlibrary).
 
 ### Maximo Application Suite license
@@ -56,6 +53,7 @@ For more information, see [Entitlement keys](https://myibm.ibm.com/products-serv
 
 The Maximo Application Suite license needs to be retrieved from the {{site.data.keyword.IBM_short}} License Key Center.
 If you do not already have your Maximo Application Suite license key file, you can create and download it in the {{site.data.keyword.Bluemix_short}} License Key Center.
+
 For more information, see [how to request specific license keys for IBM software products](https://licensing.subscribenet.com/control/ibmr/login).
 
 ### Maximo Application Suite license ID
