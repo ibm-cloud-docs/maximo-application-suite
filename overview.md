@@ -10,10 +10,7 @@ subcollection: maximo-application-suite
 
 ---
 
-
-{{site.data.keyword.attribute-definition-list}}
-
-# Overview for _serviceName_
+# Overview for Maximo Application Suite deployable architecure
 {: #overview}
 
 Add information about your deployable architecture that gives an overview the customer of what it is, why they want to use it. Don't just repeat the details from the catalog details page.
