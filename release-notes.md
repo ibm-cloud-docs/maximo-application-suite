@@ -18,13 +18,21 @@ content-type: release-note
 
 <!-- You must add the release-note content type in your attribute definitions AND to each release note H2. This will ensure that the release note entry is pulled into the notifications library. -->
 
-# Release notes for _service-name_
-{: #my-service-relnotes}
+# Release notes for Maximo Application Suite deployable architecure
+{: #masda-relnotes}
 
 <!-- The title of your H1 should be Release notes for _service-name_, where _service-name_ is the non-trademarked short version keyref. Include your service name as a search keyword at the top of your Markdown file. See the example keywords above. -->
 
-Use these release notes to learn about the latest updates to _servicename_ that are grouped by _date or build number_. Release notes are available for a minimum of three years.
+Use these release notes to learn about the latest updates to Maximo Application Suite deployable architecure that are grouped by _date or build number_. Release notes are available for a minimum of three years.
 {: shortdesc}
+
+## April release
+{: #aprilrelease}
+{: release-note}
+
+You can now deploy IBM Maximo Application Suite Core or Maximo Application Suite Core + Maximo Manage by using it's deployable architecure that is listed on {{site.data.keyword.Bluemix_full}} public catalog.
+The deployable architecture includes support for a Red Hat Openshift Kubernetes Service (ROKS) cluster with VPC Gen2 infrastructure.
+
 
 <!-- If you also have a change log for your API or CLI, include the following tip with a link to the change log. -->
 For information about changes to the _service-name_ API, see [Change log for _service-name_ API](/docs/link-to-change-log).

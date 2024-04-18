@@ -10,13 +10,15 @@ subcollection: maximo-application-suite
 
 ---
 
+{{site.data.keyword.attribute-definition-list}}
+
 # Planning for Maximo Application Suite deployable architecture
 {: #planning}
 
 Use this topic if you have prerequisites, dependencies, or other information a customer needs to be able to quickly deploy this architecture from the catalog into a project.
 {: shortdesc}
 
-## Preparing to install Maximo Application Suite by using deployable architecture from {{site.data.keyword.Bluemix_full}} Public catalog
+## Preparing to install Maximo Application Suite by using deployable architecture from {{site.data.keyword.Bluemix_full}} public catalog
 {: #preparing}
 
 Before you install IBM® Maximo® Application Suite or Maximo Application Suite Core + Manage, consider your installation preferences such as the type of Maximo Application Suite offering that you prefer.
@@ -28,13 +30,13 @@ The following offering types are supported:
 ## Prerequisites
 {: #prerequisites}
 
-Before you install Maximo Application Suite Core or Maximo Application Suite Core + Manage, you must complete several tasks.
+Before you install Maximo Application Suite Core or Maximo Application Suite Core + Manage, you must complete the following tasks.
 
-1) Creating an {{site.data.keyword.redhat_openshift_notm}} cluster
-2) Obtaining an {{site.data.keyword.Bluemix_notm}} Entitled Registry key
-3) {{site.data.keyword.Bluemix_notm}} API Key
-4) Maximo Application Suite license file
-5) SLS license ID
+1) Create an {{site.data.keyword.redhat_openshift_notm}} cluster
+2) Obtain an {{site.data.keyword.Bluemix_notm}} Entitled Registry key
+3) Retrieve the {{site.data.keyword.Bluemix_notm}} API Key
+4) Install the Maximo Application Suite license file
+5) Retireve the SLS license ID
 
 ### {{site.data.keyword.redhat_openshift_notm}} Cluster
 {: #openshiftcluster}
@@ -46,13 +48,15 @@ refer to the {{site.data.keyword.redhat_openshift_notm}} Container Platform inst
 ### {{site.data.keyword.Bluemix_short}} Entitled Registry key
 {: #entitledregkey}
 
-To access your software in the entitled registry, obtain an {{site.data.keyword.Bluemix_short}} Entitled Registry key. For more information, see [Entitlement keys](https://myibm.ibm.com/products-services/containerlibrary).
+To access your software in the entitled registry, obtain an {{site.data.keyword.Bluemix_short}} Entitled Registry key.
+For more information, see [Entitlement keys](https://myibm.ibm.com/products-services/containerlibrary).
 
 ### Maximo Application Suite license
 {: #maslic}
 
 The Maximo Application Suite license needs to be retrieved from the {{site.data.keyword.IBM_short}} License Key Center.
-If you do not already have your Maximo Application Suite license key file, you can create and download it in the {{site.data.keyword.Bluemix_short}} License Key Center. For more information, see [how to request specific license keys for IBM software products](https://licensing.subscribenet.com/control/ibmr/login).
+If you do not already have your Maximo Application Suite license key file, you can create and download it in the {{site.data.keyword.Bluemix_short}} License Key Center.
+For more information, see [how to request specific license keys for IBM software products](https://licensing.subscribenet.com/control/ibmr/login).
 
 ### Maximo Application Suite license ID
 {: #maslicid}
