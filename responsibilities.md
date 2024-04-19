@@ -37,10 +37,10 @@ Review the following sections for the specific responsibilities for you and for 
 
 Incident and operations management includes tasks such as monitoring, event management, high availability, problem determination, recovery, and full state backup and recovery.
 
-|  | {{site.data.keyword.IBM_notm}} Responsibilities | Your Responsibilities |
+| Task | {{site.data.keyword.IBM_notm}} Responsibilities | Your Responsibilities |
 |----------|-----------------------|--------|
-|Monitor the status of a deployable architecture| {{site.data.keyword.IBM_notm}} provides the ability for customers to monitor the lifecycle of the deployable architecture.  | Use the [needs attention widget](docs/secure-enterprise?topic=secure-enterprise-needs-attention-projects) or [enable Event Notifications] (docs/secure-enterprise?topic=secure-enterprise-event-notifications-events&interface=ui) to monitor events that specifically impact the lifecycle of your deployable architecture. |
-|Monitor the status of a product spun up by your deployable architecture| {{site.data.keyword.IBM_notm}} provides the ability for customers to monitor the lifecycle of the instances.  | CUse the resource list, service instance pages, or the [Status] (https://cloud.ibm.com/status) {: external} page to monitor events that specifically impact your service instance. |
+|Monitor the status of a deployable architecture| {{site.data.keyword.IBM_notm}} provides the ability for customers to monitor the lifecycle of the deployable architecture.  | Use the [needs attention widget](docs/secure-enterprise?topic=secure-enterprise-needs-attention-projects) or [enable Event Notifications](docs/secure-enterprise?topic=secure-enterprise-event-notifications-events&interface=ui) to monitor events that specifically impact the lifecycle of your deployable architecture. |
+|Monitor the status of a product spun up by your deployable architecture| {{site.data.keyword.IBM_notm}} provides the ability for customers to monitor the lifecycle of the instances.  | CUse the resource list, service instance pages, or the [Status](https://cloud.ibm.com/status){: external} page to monitor events that specifically impact your service instance. |
 {: row-headers}
 {: caption="Table 1. Responsibilities for incident and operations" caption-side="bottom"}
 {: summary="The rows are read from left to right. The first column describes the task that the customer or {{site.data.keyword.IBM_notm}} might be responsible for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
@@ -60,7 +60,7 @@ If your deployable architecture does not have compute resources that customers m
 
 Change management includes tasks such as deployment, configuration, upgrades, patching, configuration changes, and deletion.
 
-|  | {{site.data.keyword.IBM_notm}} Responsibilities | Your Responsibilities |
+| Task | {{site.data.keyword.IBM_notm}} Responsibilities | Your Responsibilities |
 |----------|-----------------------|--------|
 | Keep deployed services and resources up to date | N/A | Apply fixes and updates to the compute resources that are created from the deployable architecture. The following resources are not updated through the deployable architecture unless otherwise indicated.   \n * [Red Hat OpenShift clusters](/docs/openshift?topic=openshift-update)  \n * [Kubernetes lusters, worker nodes, and cluster components](/docs/containers?topic=containers-update) |
 |Task 1| {{site.data.keyword.IBM_notm}} responsibility description  | Customer responsibility description |
