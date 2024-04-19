@@ -15,15 +15,16 @@ subcollection: maximo-application-suite
 # Planning for Maximo Application Suite deployable architecture
 {: #planning}
 
-Before you install IBM® Maximo® Application Suite or Maximo Application Suite Core + Manage, consider your installation preferences such as the type of Maximo Application Suite offering that you prefer.
+Before you install IBM® Maximo® Application Suite or Maximo Application Suite Core + Maximo Manage, consider your installation preferences such as the type of Maximo Application Suite offering that you prefer.
 {: shortdesc}
 
 The following offering types are supported:
 
 1. Maximo Application Suite Core
-1. Maximo Application Suite Core + Maximo Manage (with internal Db2 deployed on {{site.data.keyword.redhat_openshift_full}} cluster)
+1. Maximo Application Suite Core + Maximo Manage
 
-
+Maximo Application Suite Core is deployed by using the MongoDB Community edition and Maximo Manage is deployed with internal Db2 on {{site.data.keyword.redhat_openshift_full}} cluster.
+{note :note}
 
 ## Prerequisites
 {: #prerequisites}
@@ -33,14 +34,14 @@ Before you install Maximo Application Suite Core or Maximo Application Suite Cor
 1. Create an {{site.data.keyword.redhat_openshift_notm}} cluster
 1. Obtain an {{site.data.keyword.Bluemix_notm}} Entitled Registry key
 1. Retrieve the {{site.data.keyword.Bluemix_notm}} API Key
-1. Install the Maximo Application Suite license file
+1. Get the Maximo Application Suite license file
 1. Retireve the SLS license ID
 
 ### {{site.data.keyword.redhat_openshift_notm}} Cluster
 {: #openshiftcluster}
 
 You must have a target {{site.data.keyword.redhat_openshift_notm}} cluster ready to install Maximo Application Suite into.
-If you do not already have one, then install it using {{site.data.keyword.redhat_openshift_notm}} Deployable Architecture available on {{site.data.keyword.Bluemix_short}} public catalog or
+If you do not already have one, then install it using {{site.data.keyword.redhat_openshift_notm}} Container Platform on VPC landing zone available on {{site.data.keyword.Bluemix_short}} public catalog or
 refer to the {{site.data.keyword.redhat_openshift_notm}} Container Platform installation overview.
 
 ### {{site.data.keyword.Bluemix_short}} Entitled Registry key

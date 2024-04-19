@@ -32,4 +32,4 @@ Use these release notes to learn about the latest updates to Maximo Application 
 
 Introducing Maximo Application Suite deployable architecure
 :   You can now deploy IBM Maximo Application Suite Core or Maximo Application Suite Core + Maximo Manage by using its deployable architecure that is listed on {{site.data.keyword.cloud}} public catalog.
-The deployable architecture includes support for a Red Hat Openshift Kubernetes Service cluster with VPC Gen2 infrastructure.
+The deployable architecture includes support for a {{site.data.keyword.redhat_openshift_full}} Kubernetes Service cluster with VPC Gen2 infrastructure.
