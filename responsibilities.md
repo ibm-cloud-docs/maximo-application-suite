@@ -32,9 +32,6 @@ Review the following sections for the specific responsibilities for you and for 
 ## Incident and operations management
 {: #incident-and-ops}
 
-<!-- Use this section description exactly as worded. -->
-<!-- When you have a topic that describes how a customer completes a task, link to it from the Your responsibilities column. -->
-
 Incident and operations management includes tasks such as monitoring, event management, high availability, problem determination, recovery, and full state backup and recovery.
 
 | Task | {{site.data.keyword.IBM_notm}} Responsibilities | Your Responsibilities |
@@ -63,8 +60,8 @@ Change management includes tasks such as deployment, configuration, upgrades, pa
 | Task | {{site.data.keyword.IBM_notm}} Responsibilities | Your Responsibilities |
 |----------|-----------------------|--------|
 | Keep deployed services and resources up to date | N/A | Apply fixes and updates to the compute resources that are created from the deployable architecture. The following resources are not updated through the deployable architecture unless otherwise indicated.   \n * [Red Hat OpenShift clusters](/docs/openshift?topic=openshift-update)  \n * [Kubernetes lusters, worker nodes, and cluster components](/docs/containers?topic=containers-update) |
-|Task 1| {{site.data.keyword.IBM_notm}} responsibility description  | Customer responsibility description |
-|Task 2| {{site.data.keyword.IBM_notm}} responsibility description  | Customer responsibility description |
+|Creation of the {{site.data.keyword.cloud}} deployable architectures| {{site.data.keyword.IBM_notm}} provides the base pattern as a deployable architecture for instantiation through Terraform.  | N/A |
+|Must use supported version of [{{site.data.keyword.cloud}} Terraform Provider](docs/secure-enterprise?topic=secure-enterprise-responsibilities-deployable-architectures#change-management-da).| {{site.data.keyword.IBM_notm}} publishes Terraform provider of all Terraform enabled services on {{site.data.keyword.cloud}}.  | Customers should use the latest major version. Terraform Providers version requirements are documented within the `version.tf` file for each deployable architecture. |
 |Task 3| {{site.data.keyword.IBM_notm}} responsibility description  | Customer responsibility description |
 {: row-headers}
 {: caption="Table 2. Responsibilities for change management" caption-side="bottom"}
