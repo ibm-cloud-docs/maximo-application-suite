@@ -63,6 +63,22 @@ Change management includes tasks such as deployment, configuration, upgrades, pa
 |Creation of the {{site.data.keyword.cloud}} deployable architectures| {{site.data.keyword.IBM_notm}} provides the base pattern as a deployable architecture for instantiation through Terraform.  | N/A |
 |Must use supported version of [{{site.data.keyword.cloud}} Terraform Provider](docs/secure-enterprise?topic=secure-enterprise-responsibilities-deployable-architectures#change-management-da).| {{site.data.keyword.IBM_notm}} publishes Terraform provider of all Terraform enabled services on {{site.data.keyword.cloud}}.  | Customers should use the latest major version. Terraform Providers version requirements are documented within the `version.tf` file for each deployable architecture. |
 |Task 3| {{site.data.keyword.IBM_notm}} responsibility description  | Customer responsibility description |
+|Task 4| {{site.data.keyword.IBM_notm}} responsibility description  | Customer responsibility description |
+|Task 5| {{site.data.keyword.IBM_notm}} responsibility description  | Customer responsibility description |
+|Task 6| {{site.data.keyword.IBM_notm}} responsibility description  | Customer responsibility description |
+|Task 7| {{site.data.keyword.IBM_notm}} responsibility description  | Customer responsibility description |
+|Task 8| {{site.data.keyword.IBM_notm}} responsibility description  | Customer responsibility description |
+|Task 9| {{site.data.keyword.IBM_notm}} responsibility description  | Customer responsibility description |
+|Task 10| {{site.data.keyword.IBM_notm}} responsibility description  | Customer responsibility description |
+|Task 11| {{site.data.keyword.IBM_notm}} responsibility description  | Customer responsibility description |
+|Task 12| {{site.data.keyword.IBM_notm}} responsibility description  | Customer responsibility description |
+|Task 13| {{site.data.keyword.IBM_notm}} responsibility description  | Customer responsibility description |
+|Task 14| {{site.data.keyword.IBM_notm}} responsibility description  | Customer responsibility description |
+|Task 15| {{site.data.keyword.IBM_notm}} responsibility description  | Customer responsibility description |
+|Task 16| {{site.data.keyword.IBM_notm}} responsibility description  | Customer responsibility description |
+|Task 17| {{site.data.keyword.IBM_notm}} responsibility description  | Customer responsibility description |
+|Task 18| {{site.data.keyword.IBM_notm}} responsibility description  | Customer responsibility description |
+|Task 19| {{site.data.keyword.IBM_notm}} responsibility description  | Customer responsibility description |
 {: row-headers}
 {: caption="Table 2. Responsibilities for change management" caption-side="bottom"}
 {: summary="The rows are read from left to right. The first column describes the task that the customer or IBM might be responsibility for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
