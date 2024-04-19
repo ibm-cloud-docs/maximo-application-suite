@@ -24,7 +24,7 @@ The following offering types are supported:
 1. Maximo Application Suite Core + Maximo Manage
 
 Maximo Application Suite Core is deployed by using the MongoDB Community edition and Maximo Manage is deployed with internal Db2 on {{site.data.keyword.redhat_openshift_full}} cluster.
-{note :note}
+{: note}
 
 ## Prerequisites
 {: #prerequisites}
