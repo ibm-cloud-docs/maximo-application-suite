@@ -15,7 +15,7 @@ subcollection: maximo-application-suite
 # Planning for {{site.data.keyword.prodname_imas_short}} deployable architecture
 {: #planning}
 
-Before you install {{site.data.keyword.prodname_imas_full}} or {{site.data.keyword.prodname_imas_short}} Core + {{site.data.keyword.prodname_IBM}} Maximo Manage, consider your installation preferences such as the type of {{site.data.keyword.prodname_imas_short}} offering that you prefer.
+Before you install {{site.data.keyword.prodname_imas_full}} or {{site.data.keyword.prodname_imas_short}} Core + {{site.data.keyword.IBM}} Maximo Manage, consider your installation preferences such as the type of {{site.data.keyword.prodname_imas_short}} offering that you prefer.
 {: shortdesc}
 
 The following offering types are supported:
@@ -54,7 +54,7 @@ For more information, see [Entitlement keys](https://myibm.ibm.com/products-serv
 ### {{site.data.keyword.prodname_imas_short}} license
 {: #maslic}
 
-The {{site.data.keyword.prodname_imas_short}} license needs to be retrieved from the {{site.data.keyword.IBM_short}} License Key Center.
+The {{site.data.keyword.prodname_imas_short}} license needs to be retrieved from the {{site.data.keyword.IBM}} License Key Center.
 If you do not already have your {{site.data.keyword.prodname_imas_short}} license key file, you can create and download it in the {{site.data.keyword.cloud_notm}} License Key Center.
 
 For more information, see [how to request specific license keys for IBM software products](https://licensing.subscribenet.com/control/ibmr/login){: external}.
