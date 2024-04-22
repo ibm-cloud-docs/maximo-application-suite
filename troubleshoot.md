@@ -27,7 +27,6 @@ content-type: troubleshoot
 
 <!--The title of your H1 should be a problem statement in question format of the issue that the user is experiencing. Think about the user's language they might use to describe or search for the answer to the issue they are experiencing. Use keywords for other variations of ways to ask the question at the top of the file. -->
 
-You try to create more than one instance in your Lite account, but you can't create more.
 When you try to download the cluster configuration file, you get an error.
 {: shortdesc}
 
@@ -37,14 +36,15 @@ You see the following error messages when you try to download a cluster configur
 ## Error downloading the cluster config
 {: #download-error}
 
-In schematic logs, you see the following error entry.
-
+In schematic logs, you see the following error entry:
 Terraform plan | Error: [ERROR] Error downloading the cluster config [masdaapr24-management-cluster]: Request failed with status code: 404, ServerErrorResponse: {"incidentID":"9b8fd6b3-bd93-4449-90df-1f28ef7ff303","code":"G0004","description":"The specified cluster could not be found. If applicable, make sure that you target the correct account and resource group.","type":"General","recoveryCLI":"To list the clusters you have access to, run 'ibmcloud ks cluster ls'. To list the resource groups that you have access to, run 'ibmcloud resource groups'. To target the resource group, run 'ibmcloud target -g \u003cresource_group\u003e'."}
 	Terraform plan |
 	Terraform plan |   with data.ibm_container_cluster_config.cluster_config,
 	Terraform plan |    1: data "ibm_container_cluster_config" "cluster_config" {
 	Terraform plan error: Terraform PLAN errorexit status 1
+````markdown
 {: codeblock}
+````
 
 This error indicates that either the existing cluster id that you entered is incorrect or there is no ingress connection enabled for this cluster.
 {: tsCauses}
@@ -52,13 +52,15 @@ This error indicates that either the existing cluster id that you entered is inc
 ## Invalid value for variable deployment_flavour
 {: #invalid-value-error}
 
-In schematic logs, you can see the following error entry.
+In schematic logs, you can see the following error entry:
 Terraform plan |     variable "deployment_flavour" {
 Terraform plan |     ├────────────────
 Terraform plan |     │ var.deployment_flavour is "core2"
 Terraform plan |
 Terraform plan | Invalid deployment flavour type! Valid values are 'core' or 'manage'
+````markdown
 {: codeblock}
+````
 
 This error indicates that the value for deployment_flavour that you entered is other than core or manage. Make sure you enter these values in lower case without any quotes.
 {: tsCauses}
