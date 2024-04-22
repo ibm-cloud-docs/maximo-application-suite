@@ -38,10 +38,10 @@ You see the following error messages when you try to download a cluster configur
 
 In schematic logs, you see the following error entry:
 ````Terraform plan | Error: [ERROR] Error downloading the cluster config [masdaapr24-management-cluster]: Request failed with status code: 404, ServerErrorResponse: {"incidentID":"9b8fd6b3-bd93-4449-90df-1f28ef7ff303","code":"G0004","description":"The specified cluster could not be found. If applicable, make sure that you target the correct account and resource group.","type":"General","recoveryCLI":"To list the clusters you have access to, run 'ibmcloud ks cluster ls'. To list the resource groups that you have access to, run 'ibmcloud resource groups'. To target the resource group, run 'ibmcloud target -g \u003cresource_group\u003e'."}
-	Terraform plan |
-	Terraform plan |   with data.ibm_container_cluster_config.cluster_config,
-	Terraform plan |    1: data "ibm_container_cluster_config" "cluster_config" {
-	Terraform plan error: Terraform PLAN errorexit status 1
+Terraform plan |
+Terraform plan |   with data.ibm_container_cluster_config.cluster_config,
+Terraform plan |    1: data "ibm_container_cluster_config" "cluster_config" {
+Terraform plan error: Terraform PLAN errorexit status 1
 
 ````
 {: codeblock}
@@ -82,5 +82,5 @@ License key file is missing required MAS product features.
 in the pipeline task log.
 Other examples are, if incorrect or non-existing storage class is entered.
 If file storage class is not entered then internal DB2 installation will fail.
-Deployment will also fail if you try to create the same {{site.data.keyword.imas_full}} instance on your {{site.data.keyword.redhat_openshift_notm}} cluster by passing the existing {{site.data.keyword.imas_short}} instance Id value to **input variable > mas_instance_id**.
+Deployment will also fail if you try to create the same {{site.data.keyword.prodname_imas_full}} instance on your {{site.data.keyword.redhat_openshift_notm}} cluster by passing the existing {{site.data.keyword.prodname_imas_short}} instance Id value to **input variable > mas_instance_id**.
 {: tsResolve}

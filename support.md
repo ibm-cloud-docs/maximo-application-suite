@@ -14,14 +14,14 @@ subcollection: maximo-application-suite
 
 <!-- Use your deployable architecture  name in the title to help search results, and use a nav title in the toc.yaml to shorten it to Getting help and support in the left nav-->
 
-# Getting help and support for _deployableArchitectureName_
+# Getting help and support for {{site.data.keyword.prodname_imas_short}}
 {: #help-and-support}
 
-If you experience an issue or have questions when deploying _deployableArchitectureName_, you can use the following resources before you open a support case.
+If you experience an issue or have questions when deploying {{site.data.keyword.prodname_imas_short}}, you can use the following resources before you open a support case.
 {: shortdesc}
 
 * Review the [FAQs](/docs/sap-powervs?topic=sap-powervs-faqs) in the deployment guide.
-* Review the [troubleshooting documentation](docs/sap-powervs?topic=sap-powervs-troubleshoot) to troubleshoot and resolve common issues.
+* Review the [troubleshooting documentation](/docs/sap-powervs?topic=sap-powervs-troubleshoot) to troubleshoot and resolve common issues.
 * ![{{site.data.keyword.cloud_notm}} icon](images/ibm-cloud-16.svg "IBM Cloud icon") Check the status of the {{site.data.keyword.cloud_notm}} platform and resources by going to the [Status page](https://cloud.ibm.com/status){: external}.
 * ![GitHub icon](../icons/logo-github-16.svg "GitHub icon") Review the [GitHub issues](https://github.com/terraform-ibm-modules/terraform-ibm-powervs-sap/issues){: external} to see whether other users experienced the same problem.
 
