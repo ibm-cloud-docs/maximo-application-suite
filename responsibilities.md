@@ -12,18 +12,18 @@ keywords:
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Understanding your responsibilities when you use deployable architecture for Maximo Application Suite
+# Understanding your responsibilities when you use deployable architecture for {{site.data.keyword.prodname_imas_short}}
 {: #deployable-architecure-responsibilities}
 
 
-Learn about the management responsibilities and terms and conditions that you have when you use the IBM Maximo Application Suite deployable architecture.
+Learn about the management responsibilities and terms and conditions that you have when you use the {{site.data.keyword.prodname_imas_full}} deployable architecture.
 {: shortdesc}
 
 - For more information about the responsibilities for you and for {{site.data.keyword.IBM}} when you use a deployable architecture, see [Understanding your responsibilities when you use deployable architectures](/docs/secure-enterprise?topic=secure-enterprise-responsibilities-deployable-architectures).
 - For a high-level view of the service types in {{site.data.keyword.cloud}} and the breakdown of responsibilities between the customer and {{site.data.keyword.IBM_notm}} for each type, see [Shared responsibilities for using {{site.data.keyword.cloud}} products](/docs/overview?topic=overview-shared-responsibilities).
 - For the overall terms of use, see [{{site.data.keyword.cloud_notm}} Terms and Notices](/docs/overview/terms-of-use?topic=overview-terms).
 
-Review the following sections for the specific responsibilities for you and for {{site.data.keyword.IBM_notm}} when you use the Maximo Application Suite deployable architecture.
+Review the following sections for the specific responsibilities for you and for {{site.data.keyword.IBM_notm}} when you use the {{site.data.keyword.prodname_imas_short}} deployable architecture.
 
 <!-- If you plan to list resource responsibility (see resources listed in each table in the platform shared responsibilities topic linked earlier) instead of individual tasks, you do not need to include rows for Hypervisor, Physical Servers and memory, Physical storage, Physical network and devices, and Facilities and data centers unless you need to indicate a 'Shared' or 'Customer' responsibility for one of the areas within those resources. -->
 
