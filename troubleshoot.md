@@ -42,8 +42,9 @@ In schematic logs, you see the following error entry:
 	Terraform plan |   with data.ibm_container_cluster_config.cluster_config,
 	Terraform plan |    1: data "ibm_container_cluster_config" "cluster_config" {
 	Terraform plan error: Terraform PLAN errorexit status 1
-{: codeblock}
+
 ````
+{: codeblock}
 
 This error indicates that either the existing cluster id that you entered is incorrect or there is no ingress connection enabled for this cluster.
 {: tsCauses}
@@ -57,8 +58,8 @@ Terraform plan |     ├────────────────
 Terraform plan |     │ var.deployment_flavour is "core2"
 Terraform plan |
 Terraform plan | Invalid deployment flavour type! Valid values are 'core' or 'manage'
-{: codeblock}
 ````
+{: codeblock}
 
 This error indicates that the value for deployment_flavour that you entered is other than core or manage. Make sure you enter these values in lower case without any quotes.
 {: tsCauses}
