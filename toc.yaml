@@ -43,6 +43,7 @@ toc:
       id: deploy
       topics:
       - deploy.md
+      - access.md
 
   - navgroup:
       id: reference
