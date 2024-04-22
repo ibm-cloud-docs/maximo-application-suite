@@ -43,7 +43,12 @@ toc:
       id: deploy
       topics:
       - deploy.md
-      - access.md
+
+  - navgroup:
+      id: howto
+      topics:
+      - topic: access.md
+        navtitle: Accessing Maximo Application Suite
 
   - navgroup:
       id: reference
@@ -60,4 +65,5 @@ toc:
       - topicgroup:
           label: Troubleshooting
           topics:
-          - troubleshoot.md
+          - topic: troubleshoot.md
+            navtitle: Troubleshooting failed validation when using project

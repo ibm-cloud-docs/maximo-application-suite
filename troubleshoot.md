@@ -28,10 +28,10 @@ content-type: troubleshoot
 
 <!--The title of your H1 should be a problem statement in question format of the issue that the user is experiencing. Think about the user's language they might use to describe or search for the answer to the issue they are experiencing. Use keywords for other variations of ways to ask the question at the top of the file. -->
 
-When you try to download the cluster configuration file, you get an error.
+When you try to download the cluster configuration, you get an error.
 {: shortdesc}
 
-You see the following error messages when you try to download a cluster configuration file:
+You see the following error messages when you try to download a cluster configuration:
 {: tsSymptoms}
 
 ## Error downloading the cluster config
