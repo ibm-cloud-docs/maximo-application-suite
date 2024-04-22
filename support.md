@@ -22,7 +22,7 @@ If you experience an issue or have questions when deploying {{site.data.keyword.
 
 * Review the [FAQs](/docs/sap-powervs?topic=sap-powervs-faqs) in the deployment guide.
 * Review the [troubleshooting documentation](/docs/sap-powervs?topic=sap-powervs-troubleshoot) to troubleshoot and resolve common issues.
-* ![{{site.data.keyword.cloud_notm}} icon](images/ibm-cloud-16.svg "IBM Cloud icon") Check the status of the {{site.data.keyword.cloud_notm}} platform and resources by going to the [Status page](https://cloud.ibm.com/status){: external}.
+* ![IBM Cloud icon](images/ibm-cloud-16.svg "IBM Cloud icon") Check the status of the {{site.data.keyword.cloud_notm}} platform and resources by going to the [Status page](https://cloud.ibm.com/status){: external}.
 * ![GitHub icon](../icons/logo-github-16.svg "GitHub icon") Review the [GitHub issues](https://github.com/terraform-ibm-modules/terraform-ibm-powervs-sap/issues){: external} to see whether other users experienced the same problem.
 
 
