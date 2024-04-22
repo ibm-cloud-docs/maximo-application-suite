@@ -76,7 +76,10 @@ then by clicking on the installation pipeline and checking the log file of faile
 
 There could be several reasons for deployment to fail.
 For example, if an invalid license file is entered, then it will show the following message:
-License key file is missing required MAS product features. {: codeph} in the pipeline task log.
+License key file is missing required MAS product features.
+{: codeph}
+
+in the pipeline task log.
 Other examples are, if incorrect or non-existing storage class is entered.
 If file storage class is not entered then internal DB2 installation will fail.
 Deployment will also fail if you try to create the same {{site.data.keyword.imas_full}} instance on your {{site.data.keyword.redhat_openshift_notm}} cluster by passing the existing {{site.data.keyword.imas_short}} instance Id value to **input variable > mas_instance_id**.
