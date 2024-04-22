@@ -20,37 +20,63 @@ content-type: troubleshoot
 
 <!-- Remember that this is the individual topic template for each troubleshooting entry that belongs in a troubleshooting topic group in the Help left nav group. For more information, see the guidance page: https://test.cloud.ibm.com/docs/writing?topic=writing-troubleshooting-topics-->
 
-# Title in the form of a question?
-{: #troubleshoot-xx}
+# How do I address a failed validation when using projects?
+{: #troubleshoot-mas-da-failed-validation}
 {: troubleshoot}
 {: support} <!-- Only add this attribute to entries that you want to display in the support center. -->
 
 <!--The title of your H1 should be a problem statement in question format of the issue that the user is experiencing. Think about the user's language they might use to describe or search for the answer to the issue they are experiencing. Use keywords for other variations of ways to ask the question at the top of the file. -->
 
 You try to create more than one instance in your Lite account, but you can't create more.
+When you try to download the cluster configuration file, you get an error.
 {: shortdesc}
 
-<!-- The short description should give a quick summary about the issue the user is experiencing. -->
-<!-- Example short description for an error troubleshooting topic: You try to create more than one instance in your Lite account, but you received error `message-id.0001E`.-->
-
-<!-- Tips:
-* Organize one troubleshooting issue per topic in a  topic group called "Troubleshooting" in the Help left nav section
-* Name your topic group "Troubleshooting". If you have more than one topic group to organize a large set of troubleshooting topics, use "Troubleshoting _xxx_" to provide descriptive topic group titles.
-* Use a title that uses a problem statement in the form of a question for each H1 in your topic group
-* Use an H1 ID of `troubleshoot-xx` where the `xx` is a descriptive word to match the issue the customer is experiencing for URL readability.
-* Set the `troubleshoot` content type attribute definition at the top of your file.
-* Set the `troubleshoot` content type attribute on a new line following each H1 ID.
-* Use the three attributes for the symptom, cause, and resolution.-->
-
-Description of the troubleshooting entry symptom. For example: You receive the following error message when you try to create a new Lite plan instance:
+You see the following error messages when you try to download a cluster configuration file:
 {: tsSymptoms}
 
-> message-id.0001E: Unable to provision new Lite instance
+## Error downloading the cluster config
+{: #download-error}
 
-Description of the troubleshooting entry cause. For example: There's a limit of one instance per Lite plan to ensure that these plans stay free. For more information about Lite account features, see [Lite account](link).
+In schematic logs, you see the following error entry.
+
+Terraform plan | Error: [ERROR] Error downloading the cluster config [masdaapr24-management-cluster]: Request failed with status code: 404, ServerErrorResponse: {"incidentID":"9b8fd6b3-bd93-4449-90df-1f28ef7ff303","code":"G0004","description":"The specified cluster could not be found. If applicable, make sure that you target the correct account and resource group.","type":"General","recoveryCLI":"To list the clusters you have access to, run 'ibmcloud ks cluster ls'. To list the resource groups that you have access to, run 'ibmcloud resource groups'. To target the resource group, run 'ibmcloud target -g \u003cresource_group\u003e'."}
+	Terraform plan |
+	Terraform plan |   with data.ibm_container_cluster_config.cluster_config,
+	Terraform plan |    1: data "ibm_container_cluster_config" "cluster_config" {
+	Terraform plan error: Terraform PLAN errorexit status 1
+{: codeblock}
+
+This error indicates that either the existing cluster id that you entered is incorrect or there is no ingress connection enabled for this cluster.
 {: tsCauses}
 
-Description of the troubleshooting entry resolution. For example: You can create more instances of the service by selecting one of the billable service plans, which are available in the billable accounts. To upgrade to a billable account from the console, go to **Manage > Account**, and select **Account settings**.
-{: tsResolve}
+## Invalid value for variable deployment_flavour
+{: #invalid-value-error}
 
-If you don't want to upgrade from a Lite account and are no longer using your existing Lite service instance, you can delete the existing Lite plan instance from the dashboard and then create a new instance.
+In schematic logs, you can see the following error entry.
+Terraform plan |     variable "deployment_flavour" {
+Terraform plan |     ├────────────────
+Terraform plan |     │ var.deployment_flavour is "core2"
+Terraform plan |
+Terraform plan | Invalid deployment flavour type! Valid values are 'core' or 'manage'
+{: codeblock}
+
+This error indicates that the value for deployment_flavour that you entered is other than core or manage. Make sure you enter these values in lower case without any quotes.
+{: tsCauses}
+
+## Other validation errors
+{: #other-errors}
+
+If the validation failed, it likely means that a required input value, such as an authentication method, has not been supplied yet or one of the provided inputs is not valid.
+
+Deployment will fail if one of the provided inputs is not valid. Check the output message for pipeline_execution_status and if it is not a message about sucess, then it means that the deployment has failed.
+
+If deployment has failed then it will capture the tekton install pipeline task which has failed and it will output the failed task information in the pipeline_execution_status output field. Check the log of failed task by logging into your existing {{site.data.keyword.redhat_openshift_full}} cluster and then by navigating to **Pipelines > Pipelines** and
+then by clicking on the installation pipeline and checking the log file of failed task for further information.
+
+There could be several reasons for deployment to fail.
+For example, if an invalid license file is entered, then it will show the following message:
+License key file is missing required MAS product features. {: codeph} in the pipeline task log.
+Other examples are, if incorrect or non-existing storage class is entered.
+If file storage class is not entered then internal DB2 installation will fail.
+Deployment will also fail if you try to create the same {{site.data.keyword.imas_full}} instance on your {{site.data.keyword.redhat_openshift_notm}} cluster by passing the existing {{site.data.keyword.imas_short}} instance Id value to **input variable > mas_instance_id**.
+{: tsResolve}

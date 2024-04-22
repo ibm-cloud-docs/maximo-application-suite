@@ -4,7 +4,7 @@ copyright:
   years: 2024
 lastupdated: "2024-04-17"
 
-keywords:
+keywords: faq, maximo application suite, deployable architecture
 
 subcollection: maximo-application-suite
 
@@ -12,39 +12,25 @@ content-type: faq
 
 ---
 
-<!-- keywords values above are place holders. Actual values should be pulled from the FAQ questions. -->
 
 {{site.data.keyword.attribute-definition-list}}
 
-<!-- You must add the faq content type in your attribute definitions AND to each FAQ H2. This will ensure that the FAQ entry is pulled into the FAQ library or chatbots. -->
+# FAQs for {{site.data.keyword.imas_short}} deployable architecture
+{: #mas-da-faqs}
 
-# FAQs for _service-name_
-{: #my-service-faqs}
 
-<!-- The title of your H1 should be FAQs for _service-name_, where _service-name_ is the non-trademarked short version keyref. Include your service name as a search keyword at the top of your Markdown file. See the example keywords above. -->
-
-FAQs for xxx might include questions about xxx or xxx. To find all FAQs for {{site.data.keyword.cloud}}, see our [FAQ library](/docs/faqs).
+FAQs for {{site.data.keyword.imas_full}} might include questions about {{site.data.keyword.imas_full}} deployable architecture. To find all FAQs for {{site.data.keyword.cloud}}, see our [FAQ library](/docs/faqs).
 {: shortdesc}
 
-<!-- where the first xxx is the long name of your service and the following xxx are pulled from your popular FAQs -->
-
-## How should I set up my page?
-{: #faq-page-setup}
+## What is a deployable architecture?
+{: #faq-da}
 {: faq}
 
-* Use "FAQs for xxx" as your title, where xxx is the short name with no trademarks.
-* Name the file `faqs.md` for URL readability.
-* If you require multiple FAQ files, group under a "FAQs" topicgroup and use a unique name for each file.
-* Add each question as an H2.
-* Use paragraph text following the associated H2 question for each answer.
-* Set the `faq` content type attribute definition at the top of your file.
-* Set the `faq` content type attribute on a new line following each H2 question.
-* Do not repeat task steps. Summarize and link off to task topic.
+A deployable architecture is a combination of capabilities from one or more technologies that solve a customer-defined problem, and it can have one or more reference architectures based on the customer business needs.
+For more more information, see about deployable architectures,  [Identifying the right infrastructure architecture](docs/overview?topic=overview-secure-enterprise#define-architecture).
 
-## What should I include in my FAQs?
-{: #faq-content-include}
+## What is {{site.data.keyword.imas_short}} deployable architecture?
+{: #faq-mas-da}
 {: faq}
 
-Each answer should be approximately one to five sentences. You want to make sure you are not re-documenting information that is already available in documentation because then you'd have to maintain it in two places. If a more detailed explanation for the question exists out in a documentation page, give a concise answer here, and then link out to the doc.
-
-For detailed guidance on what to include on this page, see [FAQs guidance](/docs/developing/writing/faq.html#faqs). You can also check out some examples here: [IBM Cloud IAM FAQs](/docs/developing/Access-Management/iamfaq.html#faqs) and [Account FAQs](/docs/account/account_faq.html#accountfaqs).
+{{site.data.keyword.imas_short}} deployable architecture is a combination of technologies such as Terraform, Helm Chart, and {{site.data.keyword.imas_short}} CLI that deploys the following offerings on existing {{site.data.keyword_redhat_openshift_full}} on {{site.data.keyword.cloud}}. {{site.data.keyword.imas_short}} Core and {{site.data.keyword.imas_short}} Core + Maximo Manage.
