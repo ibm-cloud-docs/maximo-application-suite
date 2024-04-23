@@ -68,11 +68,9 @@ https://test.cloud.ibm.com/docs/solution-as-code?topic=solution-as-code-naming-g
 -->
 
 # Deployable architecture for {{site.data.keyword.prodname_imas_short}}
-{: #deployable-architecture}
+{: #deployable-architecture-components}
 {: toc-content-type="reference-architecture"}
-{: toc-industry=""}
 {: toc-use-case="Automation"}
-{: toc-compliance=""}
 {: toc-version="1.0"}
 
 <!--
