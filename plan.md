@@ -32,8 +32,8 @@ The following offering types are supported:
 Before you install {{site.data.keyword.prodname_imas_short}} Core or {{site.data.keyword.prodname_imas_short}} Core + Manage, you must complete the following tasks.
 
 1. Create an {{site.data.keyword.redhat_openshift_notm}} cluster
-1. Obtain an {{site.data.keyword.cloud}} Entitled Registry key
-1. Retrieve the {{site.data.keyword.cloud_notm}} API Key
+1. Obtain an {{site.data.keyword.IBM}} Entitled Registry key
+1. Retrieve the {{site.data.keyword.IBM}} API Key
 1. Get the {{site.data.keyword.prodname_imas_short}} license file
 1. Retireve the SLS license ID
 
@@ -57,7 +57,7 @@ For example, follow these steps to deploy a ROKS VPC (Gen2 infrastructure) clust
 1. Under **Optional** section, click the edit option in front of override_json_string field and in the pop-up window, remove the double quotes ("") and enter the content that is provided in the attached 'override.json' file and click **Save** button.
 
 For more information about {{site.data.keyword.redhat_openshift_notm}} Container Platform on VPC landing zone DA, see https://cloud.ibm.com/docs/secure-infrastructure-vpc?topic=secure-infrastructure-vpc-overview.
-For information about an example on different deployment option and override.json file, see https://github.com/terraform-ibm-modules/terraform-ibm-landing-zone/blob/main/examples/override-example/override.json
+For information about an example on different deployment options and 'override.json' file, see https://github.com/terraform-ibm-modules/terraform-ibm-landing-zone/blob/main/examples/override-example/override.json
 
 1. If you have entered all required values then Validate button will be visible at the top right corner of the page. Click on it.
 1. The validation starts and on Vaidation changes page, you can see a message "All changes are scanned for code errors, cost, and compliance." and it's generating plan. These activities can take up few minutes.
@@ -65,7 +65,7 @@ For information about an example on different deployment option and override.jso
 1. On Approval pending section, enter "I approve" and click on Approve button.
 1. Click on Deploy option. This will start deploying of the cluster.
 
-### {{site.data.keyword.cloud_notm}} Entitled Registry key
+### {{site.data.keyword.IBM}} Entitled Registry key
 {: #entitledregkey}
 
 To access your software in the entitled registry, obtain an {{site.data.keyword.cloud_notm}} Entitled Registry key.
@@ -85,7 +85,7 @@ For more information, see [how to request specific license keys for IBM software
 
 A unique 12-character hexadecimal value, such as `0abcac110f02` in the first line of your {{site.data.keyword.prodname_imas_short}} license key file.
 
-### {{site.data.keyword.cloud_notm}} API Key
+### {{site.data.keyword.IBM}} API Key
 {: #cloudapikey}
 
 Your {{site.data.keyword.cloud_notm}} account's API key. If you do not have it, see
