@@ -16,16 +16,17 @@ subcollection: maximo-application-suite
 # Accessing {{site.data.keyword.prodname_imas_short}}
 {: #accessing}
 
-After you install {{site.data.keyword.prodname_imas_full}}, you need the following items of information to access it:
+After you install {{site.data.keyword.prodname_imas_full}} Core or {{site.data.keyword.prodname_imas_short}} Core + Maximo Manage, you can find the admin_url ({{site.data.keyword.prodname_imas_short}} administrator URL) to it under the
+**Outputs** section on the project configuration page.
+To find the login credentials for this URL, follow these steps:
+1. Connect to the {{site.data.keyword.redhat_openshift}} cluster.
+1. Select **Workloads > Secrets** from the navigation page.
+1. Select the 'mas-<mas_instance_id>-core' project.
+1. Click the '<mas_instance_id>-credentials-superuser' secret.
+1. Click the **Reveal values** link to get the username and password for {{site.data.keyword.prodname_imas_short}}.
+1. Click the '<mas_instance_id>-cert-public' secret from the 'mas-<mas_instance_id>-core' project.
+1. Click the **Reveal values** link to get the contents of the certificates.
+1. Retrieve the contents of 'ca.crt' file, which is the public certificate for {{site.data.keyword.prodname_imas_short}}.
+1. After you import the public certificate into your browser's trusted store, paste the {{site.data.keyword.prodname_imas_short}} administrator URL into your browser and enter the authentication credentials to access the application.
 
-- The {{site.data.keyword.prodname_imas_short}} administrator URL, which you use to connect to {{site.data.keyword.prodname_imas_short}} through a browser.
-- Your username and password.
-- The public certificate for {{site.data.keyword.prodname_imas_short}}. You import this certificate into your browser's trusted store to make sure that a secure communication between your browser and {{site.data.keyword.prodname_imas_short}} is established.
-
-How you retrieve these items of information depends on whether you opted for the email notification during the deployment.
-
-If you provide the correct SMTP configuration during the deployment, you can retrieve the administrator URL, username, and password from the emails that you received. The public certificate is attached to these emails.
-
-If you do not opt for the email notification, you can retrieve the administrator URL and credentials of the {{site.data.keyword.redhat_openshift_full}} cluster from the deployment that is created in the boot node’s resource group. However, to retrieve your username, password, and the public certificate of {{site.data.keyword.prodname_imas_short}}, you must connect to the {{site.data.keyword.redhat_openshift_notm}} cluster.
-
-For more information, see [Accessing {{site.data.keyword.prodname_imas_short}}](https://www.ibm.com/docs/en/mas-cd/continuous-delivery?topic=installing-accessing-maximo-application-suite){: external}.
+You can now log in to {{site.data.keyword.prodname_imas_short}} to deploy applications, create users, and specify configuration.
