@@ -37,29 +37,28 @@ To deploy the {{site.data.keyword.prodname_imas_full}} deployable architecture t
 
 1. Select the Add to project deployment type in Deployment options.
 
-1. Create a new project by entering name your project, description, and specify a configuration name. Select the same Region where existing cluster is running. Click Create.
+1. Create a project by entering the name your project, description, and specify a configuration name. Select the same Region where the existing cluster is running. Click Create.
 
  An existing project can be used by clicking "Add to existing" and then selecting the project and entering the configuration name.
  {: note}
 
 1. Edit and validate the configuration:
  - Select your authentication method. You can use an existing secret in Secrets Manager or add your API key directly. For more information, see Using an API key or secret to authorize projects.
-   Enter values for following other required fields from the **Required** tab.
-   - cluster_id : Enter Id of the target IBM Cloud Red Hat OpenShift Cluster. This cluster Id can be found under OpenShift clusters section.
+ 1. Enter values for following other required fields from the **Required** tab.
+   - cluster_id : Enter Id of the target IBM Cloud Red Hat OpenShift Cluster. This cluster ID can be found under the Red Hat OpenShift clusters section.
    - region : Enter region of the target IBM Cloud Red Hat OpenShift Cluster.
-   - mas_entitlement_key : Enter entitlement key to access Maximo Application Suite Image registry. See planning & preparing topic on how to get entitlement key.
+   - mas_entitlement_key : Enter the entitlement key to access the Maximo Application Suite Image registry. See planning and preparing topic on how to get entitlement key.
     You can use an existing secret in Secrets Manager or add your entitlement key directly.
-   - mas_license : Enter Maximo Application Suite License file content. See planning & preparing topic on how to get license file.
-    You can use an existing secret in Secrets Manager or add your license file content directly in base64 encoded format.
-   - sls_license_id : Enter the Suite License Server license ID. See planning & preparing topic on how to find SLS license Id.
-    You can use an existing secret in Secrets Manager or add your SLS License Id directly.
+   - mas_license : Enter the Maximo Application Suite License file content. See planning and preparing topic on how to get a license file.
+    You can use an existing secret in Secrets Manager or add your license file content directly in Base64 encoded format.
+   - sls_license_id : Enter the Suite License Server license ID. See planning and preparing topic on how to find an SLS license ID.
+    You can use an existing secret in Secrets Manager or add your SLS License ID directly.
    - deployment_flavour : Enter core for Maximo Application Suite Core deployment and enter manage for Maximo Application Suite Core + Manage deployment.
-   - mas_instance_id : Enter the Maximo Application Suite instance Id for instance creation.
+   - mas_instance_id : Enter the Maximo Application Suite instance ID for instance creation.
    - uds_contact_email : Enter the email ID for Data Reporter Operator.
-   - uds_contact_firstname : Enter your first name to be used in Data Reporter Operator.
+   - uds_contact_firstname : Enter your first name to be used in the Data Reporter Operator.
    - uds_contact_lastname : Enter your last name to be used in Data Reporter Operator.
-
-   Enter the following information in the **Optional** tab
+   1. Enter the following information in the **Optional** tab
    - mas_workspace_id : Enter the Maximo Application Suite workspace Id. Default value is wrkid1.
    - mas_workspace_name : Enter the workspace name. Default value is wrkns1.
    - storage_class_rwo : Enter the storage class (read-write once). Default value is ibmc-vpc-block-retain-10iops-tier.
@@ -75,7 +74,6 @@ To deploy the {{site.data.keyword.prodname_imas_full}} deployable architecture t
    - Click Validate. Validation takes a few minutes.
     IBM Cloud projects runs a Code Risk Analyzer scan that includes a supported set of Security and Compliance Center rules. Controls that are part of the deployable architecture and that are also supported by IBM Cloud projects are checked. Any extra controls that are not included in the list of supported Security and Compliance Center rules are not checked when you validate the configuration.
     If the validation fails because of the Code Risk Analyzer scan, you can troubleshoot the failure.
-
 1. Deploy the configuration:
    After you validate your configuration, you can deploy it to your target account.
    1. Review the input values and make any necessary changes.
