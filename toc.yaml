@@ -29,7 +29,7 @@ toc:
   - navgroup:
       id: architecture
       topics:
-      - include: ../terraform-ibm-modules/maximo-application-suite/reference-architectures/masreferencearchitecture.md
+      - include: ../terraform-ibm-modules/maximo-application-suite/reference-architectures/masdara.md
         navtitle: Deployable architecure
 
   - navgroup:
