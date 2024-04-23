@@ -1,0 +1,27 @@
+{
+    "title": "Solution docs",
+    "lastupdated": "2024-04-23",
+    "introduction": "This is a description of what the user will be able to access or find content-wise for your product.",
+    "section_diagram": {
+      "description": "This is an overall architecture diagram.",
+      "diagram": "/images/vpc-architecture.svg",
+      "caption": "A something something that does something."
+    },
+    "section_video": {
+      "description": "Learn all about this architecture.",
+      "href": "https://www.youtube.com/embed/HzugDzl2cfg?modestbranding=1",
+      "script": "/docs/acme-test?topic=acme-test-video-script"
+    },
+    "section_training": [
+      {
+        "title": "Title of training course",
+        "description": "Learn how you can implement secure solutions to strengthen your business.",
+        "href": "https://developer.ibm.com/solutions/security/courses/"
+      },
+      {
+        "title": "Title of training course",
+        "description": "Learn how you can implement secure solutions to strengthen your business.",
+        "href": "https://developer.ibm.com/solutions/security/courses/"
+      }
+    ]
+  }
