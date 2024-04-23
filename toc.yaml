@@ -29,10 +29,8 @@ toc:
   - navgroup:
       id: architecture
       topics:
-      - topic-1.md
-      - topic-2.md
-      - topic: topic-3.md
-        navtitle: A shorter navtitle
+      - include: ../terraform-ibm-modules/maximo-application-suite/reference-architectures/masreferencearchitecture.md
+        navtitle: Deployable architecure
 
   - navgroup:
       id: plan
