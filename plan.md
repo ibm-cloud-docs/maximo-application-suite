@@ -57,13 +57,14 @@ For example, follow these steps to deploy a ROKS VPC (Gen2 infrastructure) clust
 1. Under **Optional** section, click the edit option in front of override_json_string field and in the pop-up window, remove the double quotes ("") and enter the content that is provided in the attached 'override.json' file and click **Save** button.
 
 For more information about {{site.data.keyword.redhat_openshift_notm}} Container Platform on VPC landing zone DA, see https://cloud.ibm.com/docs/secure-infrastructure-vpc?topic=secure-infrastructure-vpc-overview.
+
 For information about an example on different deployment options and 'override.json' file, see https://github.com/terraform-ibm-modules/terraform-ibm-landing-zone/blob/main/examples/override-example/override.json
 
-1. If you have entered all required values then Validate button will be visible at the top right corner of the page. Click on it.
-1. The validation starts and on Vaidation changes page, you can see a message "All changes are scanned for code errors, cost, and compliance." and it's generating plan. These activities can take up few minutes.
+1. If you have entered all required values then **Validate** button will be visible. Click it.
+1. The validation starts and on **Vaidation changes** page, you can see a message <All changes are scanned for code errors, cost, and compliance.> and it's generating plan. These activities can take time to complete.
 1. Make sure validation completes and it displays Validation successful message.
-1. On Approval pending section, enter "I approve" and click on Approve button.
-1. Click on Deploy option. This will start deploying of the cluster.
+1. On Approval pending section, enter 'I approve' and click **Approve** button.
+1. Click **Deploy** option. This will start deploying of the cluster.
 
 ### {{site.data.keyword.IBM}} Entitled Registry key
 {: #entitledregkey}
