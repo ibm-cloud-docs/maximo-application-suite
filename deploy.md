@@ -70,8 +70,8 @@ To deploy the {{site.data.keyword.prodname_imas_full}} deployable architecture t
    - pipeline_storage_class : Enter the storage class for pipeline. Default value is ibmc-vpc-block-retain-10iops-tier.
     Make sure this storage class is present under **Storage > StorageClasses** section on your Openshift cluster section.
    - cluster_config_endpoint_type : Enter which type of endpoint to use for for cluster config access: 'default', 'private', 'vpe', 'link'. 'default' value will use the default endpoint of the cluster.
-   - Save the configuration.
-   - Click Validate. Validation takes a few minutes.
+1. Save the configuration.
+1. Click Validate. Validation takes a few minutes.
     IBM Cloud projects runs a Code Risk Analyzer scan that includes a supported set of Security and Compliance Center rules. Controls that are part of the deployable architecture and that are also supported by IBM Cloud projects are checked. Any extra controls that are not included in the list of supported Security and Compliance Center rules are not checked when you validate the configuration.
     If the validation fails because of the Code Risk Analyzer scan, you can troubleshoot the failure.
 1. Deploy the configuration:
