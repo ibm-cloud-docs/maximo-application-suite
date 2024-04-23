@@ -33,7 +33,7 @@ Before you install {{site.data.keyword.prodname_imas_short}} Core or {{site.data
 
 1. Create an {{site.data.keyword.redhat_openshift_notm}} cluster
 1. Obtain an {{site.data.keyword.IBM}} Entitled Registry key
-1. Retrieve the {{site.data.keyword.IBM}} API Key
+1. Retrieve the {{site.data.keyword.cloud_notm}} API Key
 1. Get the {{site.data.keyword.prodname_imas_short}} license file
 1. Retireve the SLS license ID
 
@@ -85,8 +85,10 @@ For more information, see [how to request specific license keys for IBM software
 
 A unique 12-character hexadecimal value, such as `0abcac110f02` in the first line of your {{site.data.keyword.prodname_imas_short}} license key file.
 
-### {{site.data.keyword.IBM}} API Key
+### {{site.data.keyword.cloud_notm}} API Key
 {: #cloudapikey}
 
-Your {{site.data.keyword.cloud_notm}} account's API key. If you do not have it, see
+Your {{site.data.keyword.cloud_notm}} account's API key. The user who owns this key must be assigned the Administrator role.
+
+If you do not have the API key, see
 [Managing user API keys](/docs/account?topic=account-userapikey&interface=ui).
