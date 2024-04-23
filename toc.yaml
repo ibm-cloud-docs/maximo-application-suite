@@ -29,8 +29,8 @@ toc:
   - navgroup:
       id: architecture
       topics:
-      - include: ../terraform-ibm-modules/maximo-application-suite/reference-architectures/masdara.md
-        navtitle: Deployable architecure
+      - include: ../deployable-reference-architectures/terraform-ibm-mas/masdara.md
+        navtitle: Maximo Application Suite
 
   - navgroup:
       id: plan
@@ -65,3 +65,10 @@ toc:
           topics:
           - topic: troubleshoot.md
             navtitle: Troubleshooting failed validation when using project
+          - topicgroup:
+              label: Troubleshooting projects
+              topics:
+              - include: ../secure-enterprise/ts-needs-attention.md
+                navtitle: How do I address a failed validation?
+              - include: ../secure-enterprise/ts-deploy.md
+                navtitle: How do I address a failed deployment?
