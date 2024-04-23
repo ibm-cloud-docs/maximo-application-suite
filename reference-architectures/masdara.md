@@ -93,9 +93,7 @@ The IBM Maximo Application Suite® deployable architecture provides a simple aut
 ## Design concepts
 {: #design-concepts}
 
-Customize the design requirement heat map template image and highlight the scope of the architecture. Publishing in IBM Cloud Docs requires a caption to meet accessibility requirements.
-
-![Deployable architecure heat map of Maximo Application Suite](heatmap.svg "Deployable architecure heat map of Maximo Application Suite"){: caption="Figure 2. Deployable architecure heat map of Maximo Application Suite" caption-side="bottom"}
+![Deployable architecure heat map of Maximo Application Suite](/terraform-ibm-modules/maximo-application-suite/reference-architecures/heat-map-mas.svg "Deployable architecure heat map of Maximo Application Suite"){: caption="Figure 2. Deployable architecure heat map of Maximo Application Suite" caption-side="bottom"}
 
 <!--For more information about creating a design requirements heat map image, see [Design requirements heat map](https://test.cloud.ibm.com/docs/architecture-framework?topic=architecture-framework-heat-map). -->
 
