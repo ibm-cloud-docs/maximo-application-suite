@@ -92,3 +92,28 @@ Your {{site.data.keyword.cloud_notm}} account's API key. The user who owns this 
 
 If you do not have the API key, see
 [Managing user API keys](/docs/account?topic=account-userapikey&interface=ui).
+
+## Verify access role
+{: #verifyrole}
+
+IAM access roles are required to install this deployable architecture and create all the required elements.
+
+You need the following permissions for this deployable architecture:
+- Create services from {{site.data.keyword.cloud_notm}} catalog.
+- Create and modify {{site.data.keyword.cloud_notm}} VPC services, virtual server instances, networks, network prefixes, storage volumes, SSH keys, and security groups of this VPC.
+- Create and modify IBM Cloud direct links and IBM Cloud Transit Gateway.
+- Access existing Object Storage services.
+
+For information about configuring permissions, contact your {{site.data.keyword.cloud_notm}} account administrator.
+
+## Access for {{site.data.keyword.cloud_notm}} projects
+{: #access-ibmcloud-projects}
+
+You can use {{site.data.keyword.cloud_notm}} projects as a deployment option. Projects are designed with infrastructure as code and compliance in mind to help ensure that your projects are managed, secure, and always compliant. For more information, see [Learn about IaC deployments with projects](/docs/secure-enterprise?topic=secure-enterprise-understanding-projects).
+
+You need the following access to create a project and create project tooling resources within the account. Make sure you have the following access:
+- The Editor role on the Projects service.
+- The Editor and Manager role on the Schematics service
+- The Viewer role on the resource group for the project
+
+For more information, see [Assigning users access to projects](/docs/secure-enterprise?topic=secure-enterprise-access-project).
