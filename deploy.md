@@ -46,8 +46,8 @@ To deploy the {{site.data.keyword.prodname_imas_full}} deployable architecture t
 1. Edit and validate the configuration:
  - Select your authentication method. You can use an existing secret in **Secrets Manager** or add your **API key** directly. For more information, see [Using an API key](/docs/account?topic=account-userapikey&interface=ui#manage-user-keys) or secret to authorize projects.
    1. Enter values for following other required fields from the **Required** tab.
-     - **cluster_id** : Enter Id of the target {{site.data.keyword_cloud_notm}} {{site.data.keyword.redhat_openshift_short}} cluster. This cluster ID can be found under the {{site.data.keyword.redhat_openshift_short}} clusters section.
-     - **region** : Enter region of the target {{site.data.keyword_cloud_notm}} {{site.data.keyword.redhat_openshift_short}} cluster.
+     - **cluster_id** : Enter Id of the target {{site.data.keyword_cloud_notm}} {{site.data.keyword.redhat_openshift_notm}} cluster. This cluster ID can be found under the {{site.data.keyword.redhat_openshift_notm}} clusters section.
+     - **region** : Enter region of the target {{site.data.keyword_cloud_notm}} {{site.data.keyword.redhat_openshift_notm}} cluster.
      - **mas_entitlement_key** : Enter the entitlement key to access the {{site.data.keyword.prodname_imas_short}} Image registry. See planning and preparing topic on how to get entitlement key.
        You can use an existing secret in **Secrets Manager** or add your entitlement key directly.
      - **mas_license** : Enter the {{site.data.keyword.prodname_imas_short}} License file content. See planning and preparing topic on how to get a license file.
@@ -63,11 +63,11 @@ To deploy the {{site.data.keyword.prodname_imas_full}} deployable architecture t
      - **mas_workspace_id** : Enter the {{site.data.keyword.prodname_imas_short}} workspace Id. Default value is `wrkid1`.
      - **mas_workspace_name** : Enter the workspace name. Default value is wrkns1.
      - **storage_class_rwo** : Enter the storage class (read-write once). Default value is  `ibmc-vpc-block-retain-10iops-tier`.
-       Make sure this storage class is present under **Storage > StorageClasses** section on your {{site.data.keyword.redhat_openshift_short}} cluster section.
+       Make sure this storage class is present under **Storage > StorageClasses** section on your {{site.data.keyword.redhat_openshift_notm}} cluster section.
      - **storage_class_rwx** : Enter the storage class (read-write many). Default value is `ibmc-vpc-file-dp2`.
-       If you are planning to deploy {{site.data.keyword.prodname_imas_short}} Core + Manage then enter file storage class for DB2 and make sure this storage class is present under **Storage > StorageClasses** section on your {{site.data.keyword.redhat_openshift_short}} cluster section.
+       If you are planning to deploy {{site.data.keyword.prodname_imas_short}} Core + Manage then enter file storage class for DB2 and make sure this storage class is present under **Storage > StorageClasses** section on your {{site.data.keyword.redhat_openshift_notm}} cluster section.
      - pipeline_storage_class : Enter the storage class for pipeline. Default value is `ibmc-vpc-block-retain-10iops-tier`.
-       Make sure this storage class is present under **Storage > StorageClasses** section on your {{site.data.keyword.redhat_openshift_short}} cluster section.
+       Make sure this storage class is present under **Storage > StorageClasses** section on your {{site.data.keyword.redhat_openshift_notm}} cluster section.
      - **cluster_config_endpoint_type** : Enter which type of endpoint to use for for cluster config access: `default`, `private`, `vpe`, `link`. The value `default` is used in the default endpoint of the cluster.
 1. Save the configuration.
 1. Click **Validate**. Validation takes a few minutes.
@@ -82,5 +82,5 @@ To deploy the {{site.data.keyword.prodname_imas_full}} deployable architecture t
 1. Review the outputs from the deployable architecture.
    - **pipeline_execution_status** : If installation pipeline is successful then > Successful message is shown here. If there is a failure in any of pipeline task then that failed task information will be shown here.
    - **maximo_admin_url** : If `pipeline_execution_status` is successful then admin URL to the deployed offering is displayed here.
-     Login credentials to this admin url can be found under **Workloads > Secrets** section on your {{site.data.keyword.redhat_openshift_short}} cluster. Search for `<instance_id>-credentials-superuser name` under **Secrets** section. For example, if you entered `inst1` as input value to **mas_instance_id input** field then search for `inst1-credentials-superuser name` under **Secrets** section.
+     Login credentials to this admin url can be found under **Workloads > Secrets** section on your {{site.data.keyword.redhat_openshift_notm}} cluster. Search for `<instance_id>-credentials-superuser name` under **Secrets** section. For example, if you entered `inst1` as input value to **mas_instance_id input** field then search for `inst1-credentials-superuser name` under **Secrets** section.
      {: note}
