@@ -29,6 +29,30 @@ The following offering types are supported:
 ## Prerequisites
 {: #prerequisites}
 
+### Verify access role
+{: #verifyrole}
+
+IAM access roles are required to install this deployable architecture and create all the required elements.
+
+You need the following permissions for this deployable architecture:
+- Create services from {{site.data.keyword.cloud_notm}} catalog.
+- Create and modify {{site.data.keyword.cloud_notm}} VPC services, virtual server instances, networks, network prefixes, storage volumes, SSH keys, and security groups of this VPC.
+- Create and modify IBM Cloud direct links and IBM Cloud Transit Gateway.
+- Access existing Object Storage services.
+
+For information about configuring permissions, contact your {{site.data.keyword.cloud_notm}} account administrator.
+
+### Access for {{site.data.keyword.cloud_notm}} projects
+{: #access-ibmcloud-projects}
+
+You can use {{site.data.keyword.cloud_notm}} projects as a deployment option. Projects are designed with infrastructure as code and compliance in mind to help ensure that your projects are managed, secure, and always compliant. For more information, see [Learn about IaC deployments with projects](/docs/secure-enterprise?topic=secure-enterprise-understanding-projects).
+
+You need the following access to create a project and create project tooling resources within the account. Make sure you have the following access:
+- The Editor role on the Projects service.
+- The Editor and Manager role on the Schematics service
+- The Viewer role on the resource group for the project
+   For more information, see [Assigning users access to projects](/docs/secure-enterprise?topic=secure-enterprise-access-project).
+
 Before you install {{site.data.keyword.prodname_imas_short}} Core or {{site.data.keyword.prodname_imas_short}} Core + Manage, you must complete the following tasks.
 
 1. Create an {{site.data.keyword.redhat_openshift_notm}} cluster
@@ -41,9 +65,11 @@ Before you install {{site.data.keyword.prodname_imas_short}} Core or {{site.data
 {: #openshiftcluster}
 
 You must have a target {{site.data.keyword.redhat_openshift_notm}} cluster ready to install {{site.data.keyword.prodname_imas_short}}.
-If you do not already have one, then install it using {{site.data.keyword.redhat_openshift_notm}} Container Platform on VPC landing zone available on {{site.data.keyword.cloud_notm}} public catalog or
-refer to the {{site.data.keyword.redhat_openshift_notm}} Container Platform installation overview.
+If you do not already have one, then install it using {{site.data.keyword.redhat_openshift_notm}} Container Platform on VPC landing zone available on {{site.data.keyword.cloud_notm}} public catalog or refer to the {{site.data.keyword.redhat_openshift_notm}} Container Platform installation overview.
 Make sure your existing {{site.data.keyword.redhat_openshift_notm}} cluster has outbound access to 'quay.io' registry site.
+
+#### Deploying {{site.data.keyword.redhat_openshift_notm}} Kubernetes Service VPC cluster
+{: #deploy-roks}
 
 For example, follow these steps to deploy a ROKS VPC (Gen2 infrastructure) cluster using {{site.data.keyword.redhat_openshift_notm}} Container Platform on VPC landing zone DA from {{site.data.keyword.cloud_notm}} Public Catalog.
 
@@ -54,11 +80,9 @@ For example, follow these steps to deploy a ROKS VPC (Gen2 infrastructure) clust
    - To add to existing project, select option, project, and enter either a new configuration name or use the default configuration name. Click **Add**.
 1. On **Edit configuration** page, under **Configure > Security** section, enter your api_key by either selecting from **Secrets Manager** or by entering it manually.
 1. Under **Required** section, select kube_version as 4.12_openshift. Select the region where you are planning to create this cluster. For prefix field, enter a unique name.
-1. Under **Optional** section, click the edit option in front of override_json_string field and in the pop-up window, remove the double quotes ("") and enter the content that is provided in the attached 'override.json' file and click **Save** button.
-   For more information about {{site.data.keyword.redhat_openshift_notm}} Container Platform on VPC landing zone DA, see https://cloud.ibm.com/docs/secure-infrastructure-vpc?topic=secure-infrastructure-vpc-overview.
-
-   For information about an example on different deployment options and 'override.json' file, see https://github.com/terraform-ibm-modules/terraform-ibm-landing-zone/blob/main/examples/override-example/override.json
-
+1. Under **Optional** section, click the edit option in front of override_json_string field and in the pop-up window, remove the double quotes ("") and enter the content that is provided in the `override.json` file and click **Save** button.
+   For information about an example on different deployment options, see the [override.json](https://github.com/terraform-ibm-modules/terraform-ibm-landing-zone/blob/main/examples/override-example/override.json){: external} file.
+   For more information about {{site.data.keyword.redhat_openshift_notm}} Container Platform on VPC landing zone DA, see [Overview](https://cloud.ibm.com/docs/secure-infrastructure-vpc?topic=secure-infrastructure-vpc-overview).
 1. If you have entered all required values then **Validate** button will be visible. Click it.
 1. The validation starts and on **Vaidation changes** page, you can see a message <All changes are scanned for code errors, cost, and compliance.> and it's generating plan. These activities can take time to complete.
 1. Make sure validation completes and it displays Validation successful message.
@@ -83,36 +107,13 @@ For more information, see [how to request specific license keys for IBM software
 ### {{site.data.keyword.prodname_imas_short}} license ID
 {: #maslicid}
 
-A unique 12-character hexadecimal value, such as `0abcac110f02` in the first line of your {{site.data.keyword.prodname_imas_short}} license key file.
+A unique 12-character hexadecimal value in the first line of your {{site.data.keyword.prodname_imas_short}} license key file.
+For example, `SERVER sls-rlks-0.rlks 0242ac110002 27000`, where the 12-character hexadecimal value is `0242ac110002`.
+You can use a Secret Manager or if you do not have the Secret Manager installed, you can use base64 encoding. For more information, see [Base64 encoding and decoding](https://www.base64encode.org/){: external}.
 
 ### {{site.data.keyword.cloud_notm}} API Key
 {: #cloudapikey}
 
 Your {{site.data.keyword.cloud_notm}} account's API key. The user who owns this key must be assigned the Administrator role.
-
 If you do not have the API key, see
 [Managing user API keys](/docs/account?topic=account-userapikey&interface=ui).
-
-## Verify access role
-{: #verifyrole}
-
-IAM access roles are required to install this deployable architecture and create all the required elements.
-
-You need the following permissions for this deployable architecture:
-- Create services from {{site.data.keyword.cloud_notm}} catalog.
-- Create and modify {{site.data.keyword.cloud_notm}} VPC services, virtual server instances, networks, network prefixes, storage volumes, SSH keys, and security groups of this VPC.
-- Create and modify IBM Cloud direct links and IBM Cloud Transit Gateway.
-- Access existing Object Storage services.
-
-For information about configuring permissions, contact your {{site.data.keyword.cloud_notm}} account administrator.
-
-## Access for {{site.data.keyword.cloud_notm}} projects
-{: #access-ibmcloud-projects}
-
-You can use {{site.data.keyword.cloud_notm}} projects as a deployment option. Projects are designed with infrastructure as code and compliance in mind to help ensure that your projects are managed, secure, and always compliant. For more information, see [Learn about IaC deployments with projects](/docs/secure-enterprise?topic=secure-enterprise-understanding-projects).
-
-You need the following access to create a project and create project tooling resources within the account. Make sure you have the following access:
-- The Editor role on the Projects service.
-- The Editor and Manager role on the Schematics service
-- The Viewer role on the resource group for the project
-   For more information, see [Assigning users access to projects](/docs/secure-enterprise?topic=secure-enterprise-access-project).
