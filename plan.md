@@ -50,15 +50,14 @@ For example, follow these steps to deploy a ROKS VPC (Gen2 infrastructure) clust
 1. Go to {{site.data.keyword.cloud_notm}} public catalog and search for {{site.data.keyword.redhat_openshift_notm}} Container Platform on VPC landing zone DA and click on it's tile.
 1. Select the Product version. Select **Variation** as Standard and click **Add to project**.
 1. On **Add to project** page, either create a project or add to your existing project.
- - To create a project, enter Name, Description (optional), select a Region, and Resource group
- - To add to existing project, select option, project, and enter either a new configuration name or use the default configuration name. Click **Add**.
+   - To create a project, enter Name, Description (optional), select a Region, and Resource group
+   - To add to existing project, select option, project, and enter either a new configuration name or use the default configuration name. Click **Add**.
 1. On **Edit configuration** page, under **Configure > Security** section, enter your api_key by either selecting from **Secrets Manager** or by entering it manually.
 1. Under **Required** section, select kube_version as 4.12_openshift. Select the region where you are planning to create this cluster. For prefix field, enter a unique name.
 1. Under **Optional** section, click the edit option in front of override_json_string field and in the pop-up window, remove the double quotes ("") and enter the content that is provided in the attached 'override.json' file and click **Save** button.
+   For more information about {{site.data.keyword.redhat_openshift_notm}} Container Platform on VPC landing zone DA, see https://cloud.ibm.com/docs/secure-infrastructure-vpc?topic=secure-infrastructure-vpc-overview.
 
-For more information about {{site.data.keyword.redhat_openshift_notm}} Container Platform on VPC landing zone DA, see https://cloud.ibm.com/docs/secure-infrastructure-vpc?topic=secure-infrastructure-vpc-overview.
-
-For information about an example on different deployment options and 'override.json' file, see https://github.com/terraform-ibm-modules/terraform-ibm-landing-zone/blob/main/examples/override-example/override.json
+   For information about an example on different deployment options and 'override.json' file, see https://github.com/terraform-ibm-modules/terraform-ibm-landing-zone/blob/main/examples/override-example/override.json
 
 1. If you have entered all required values then **Validate** button will be visible. Click it.
 1. The validation starts and on **Vaidation changes** page, you can see a message <All changes are scanned for code errors, cost, and compliance.> and it's generating plan. These activities can take time to complete.
@@ -116,5 +115,4 @@ You need the following access to create a project and create project tooling res
 - The Editor role on the Projects service.
 - The Editor and Manager role on the Schematics service
 - The Viewer role on the resource group for the project
-
-For more information, see [Assigning users access to projects](/docs/secure-enterprise?topic=secure-enterprise-access-project).
+   For more information, see [Assigning users access to projects](/docs/secure-enterprise?topic=secure-enterprise-access-project).
