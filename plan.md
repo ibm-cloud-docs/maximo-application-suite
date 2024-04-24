@@ -79,6 +79,7 @@ For example, follow these steps to deploy a ROKS VPC (Gen2 infrastructure) clust
    - To create a project, enter Name, Description (optional), select a Region, and Resource group
    - To add to existing project, select option, project, and enter either a new configuration name or use the default configuration name. Click **Add**.
 1. On **Edit configuration** page, under **Configure > Security** section, enter your api_key by either selecting from **Secrets Manager** or by entering it manually.
+   If you are using the Secrets Mananger, ensure you have granted required permissions and created the API key. For more information, see [Using an API key with secrets manager to authorize a project to deploy an architecure](/docs/secure-enterprise?topic=secure-enterprise-authorize-project).
 1. Under **Required** section, select kube_version as 4.12_openshift. Select the region where you are planning to create this cluster. For prefix field, enter a unique name.
 1. Under **Optional** section, click the edit option in front of override_json_string field and in the pop-up window, remove the double quotes ("") and enter the content that is provided in the `override.json` file and click **Save** button.
    For information about an example on different deployment options, see the [override.json](https://github.com/terraform-ibm-modules/terraform-ibm-landing-zone/blob/main/examples/override-example/override.json){: external} file.
@@ -109,7 +110,7 @@ For more information, see [how to request specific license keys for IBM software
 
 A unique 12-character hexadecimal value in the first line of your {{site.data.keyword.prodname_imas_short}} license key file.
 For example, `SERVER sls-rlks-0.rlks 0242ac110002 27000`, where the 12-character hexadecimal value is `0242ac110002`.
-You can use a Secret Manager or if you do not have the Secret Manager installed, you can use base64 encoding. For more information, see [Base64 encoding and decoding](https://www.base64encode.org/){: external}.
+You can use a Secrets Manager or if you do not have the Secrets Manager installed, you can use base64 encoding. For more information, see [Base64 encoding and decoding](https://www.base64encode.org/){: external}.
 
 ### {{site.data.keyword.cloud_notm}} API Key
 {: #cloudapikey}

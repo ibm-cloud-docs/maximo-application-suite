@@ -25,7 +25,7 @@ To deploy the {{site.data.keyword.prodname_imas_full}} deployable architecture t
 
 1. Make sure that you comply with the prerequisites in the [planning](/docs/maximo-application-suite?topic=maximo-application-suite-planning) topic.
 
-1. Go to the {{site.data.keyword.cloud}} catalog and search for the {{site.data.keyword.prodname_imas_short}} deployable architecture that you're interested in deploying.
+1. Go to the {{site.data.keyword.cloud}} catalog and search for {{site.data.keyword.prodname_imas_short}}.
 
 1. In the search result, click the **{{site.data.keyword.prodname_imas_short}} deployable architecture** tile to open the details.
 
@@ -33,18 +33,16 @@ To deploy the {{site.data.keyword.prodname_imas_full}} deployable architecture t
 
 1. Select the variation as **Existing Cluster**.
 
-1. Click **Review deployment options**.
-
 1. Select the **Add to project** deployment type in **Deployment** options.
 
 1. Create a project by entering the name of your project, description, and specify a configuration name. Select the same Region where the existing cluster is running.
 1. Click Create.
 
- An existing project can be used by clicking "Add to existing" and then selecting the project and entering the configuration name.
+ An existing project can be used by clicking **Add to existing** and then selecting the project and entering the configuration name.
  {: note}
 
 1. Edit and validate the configuration:
- - Select your authentication method. You can use an existing secret in **Secrets Manager** or add your **API key** directly. For more information, see [Using an API key](/docs/account?topic=account-userapikey&interface=ui#manage-user-keys) or secret to authorize projects.
+ - Select your authentication method. You can use an existing secret in **Secrets Manager** or add your **API key** directly. For more information, see [Using an API key with secrets manager to authorize a project to deploy an architecure](/docs/secure-enterprise?topic=secure-enterprise-authorize-project).
    1. Enter values for following other required fields from the **Required** tab.
      - **cluster_id** : Enter Id of the target {{site.data.keyword_cloud_notm}} {{site.data.keyword.redhat_openshift_notm}} cluster. This cluster ID can be found under the {{site.data.keyword.redhat_openshift_notm}} clusters section.
      - **region** : Enter region of the target {{site.data.keyword_cloud_notm}} {{site.data.keyword.redhat_openshift_notm}} cluster.
