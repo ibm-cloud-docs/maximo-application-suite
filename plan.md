@@ -66,9 +66,9 @@ Before you install {{site.data.keyword.prodname_imas_short}} Core or {{site.data
 
 You must have a target {{site.data.keyword.redhat_openshift_notm}} cluster ready to install {{site.data.keyword.prodname_imas_short}}.
 If you do not already have one, then install it using {{site.data.keyword.redhat_openshift_notm}} Container Platform on VPC landing zone available on {{site.data.keyword.cloud_notm}} public catalog or refer to the {{site.data.keyword.redhat_openshift_notm}} Container Platform installation overview.
-Make sure your existing {{site.data.keyword.redhat_openshift_notm}} cluster has outbound access to 'quay.io' registry site.
+Make sure your existing {{site.data.keyword.redhat_openshift_notm}} cluster has outbound access to `quay.io` registry site.
 
-#### Deploying {{site.data.keyword.redhat_openshift_notm}} Kubernetes Service VPC cluster
+#### Deploying {{site.data.keyword.redhat_openshift_notm}} Kubernetes Service (ROKS) VPC cluster
 {: #deploy-roks}
 
 For example, follow these steps to deploy a ROKS VPC (Gen2 infrastructure) cluster using {{site.data.keyword.redhat_openshift_notm}} Container Platform on VPC landing zone DA from {{site.data.keyword.cloud_notm}} Public Catalog.
@@ -81,13 +81,13 @@ For example, follow these steps to deploy a ROKS VPC (Gen2 infrastructure) clust
 1. On **Edit configuration** page, under **Configure > Security** section, enter your api_key by either selecting from **Secrets Manager** or by entering it manually.
    If you are using the Secrets Mananger, ensure you have granted required permissions and created the API key. For more information, see [Using an API key with secrets manager to authorize a project to deploy an architecure](/docs/secure-enterprise?topic=secure-enterprise-authorize-project).
 1. Under **Required** section, select kube_version as 4.12_openshift. Select the region where you are planning to create this cluster. For prefix field, enter a unique name.
-1. Under **Optional** section, click the edit option in front of override_json_string field and in the pop-up window, remove the double quotes ("") and enter the content that is provided in the `override.json` file and click **Save** button.
+1. Under **Optional** section, click the edit option in front of `override_json_string` field and in the pop-up window, remove the double quotes ("") and enter the content that is provided in the `override.json` file and click **Save** button.
    For information about an example on different deployment options, see the [override.json](https://github.com/terraform-ibm-modules/terraform-ibm-landing-zone/blob/main/examples/override-example/override.json){: external} file.
    For more information about {{site.data.keyword.redhat_openshift_notm}} Container Platform on VPC landing zone DA, see [Overview](https://cloud.ibm.com/docs/secure-infrastructure-vpc?topic=secure-infrastructure-vpc-overview).
 1. If you have entered all required values then **Validate** button will be visible. Click it.
-1. The validation starts and on **Vaidation changes** page, you can see a message <All changes are scanned for code errors, cost, and compliance.> and it's generating plan. These activities can take time to complete.
+1. The validation starts and on **Vaidation changes** page, you can see a message > All changes are scanned for code errors, cost, and compliance. and it's generating plan. These activities can take time to complete.
 1. Make sure validation completes and it displays Validation successful message.
-1. On Approval pending section, enter 'I approve' and click **Approve** button.
+1. On Approval pending section, enter > I approve and click **Approve** button.
 1. Click **Deploy** option. This will start deploying of the cluster.
 
 ### {{site.data.keyword.IBM}} Entitled Registry key
