@@ -34,9 +34,9 @@ To deploy the {{site.data.keyword.prodname_imas_full}} deployable architecture t
 1. Edit and validate the configuration:
  - Select your authentication method. You can use an existing secret in **Secrets Manager** or add your **API key** directly. For more information, see [Using an API key with secrets manager to authorize a project to deploy an architecure](/docs/secure-enterprise?topic=secure-enterprise-authorize-project).
    1. Enter values for following other required fields from the **Required** tab.
-     - **cluster_id** : Enter Id of the target {{site.data.keyword_cloud_notm}} {{site.data.keyword.redhat_openshift_notm}} cluster. This cluster ID can be found under the {{site.data.keyword.redhat_openshift_notm}} clusters section.
-     - **region** : Enter region of the target {{site.data.keyword_cloud_notm}} {{site.data.keyword.redhat_openshift_notm}} cluster.
-     - **mas_entitlement_key** : Enter the entitlement key to access the {{site.data.keyword.prodname_imas_short}} Image registry. See planning and preparing topic on how to get entitlement key.
+     - **cluster_id** : Enter Id of the target IBM Cloud {{site.data.keyword.redhat_openshift_notm}} cluster. This cluster ID can be found under the {{site.data.keyword.redhat_openshift_notm}} clusters section.
+     - **region** : Enter region of the target IBM Cloud {{site.data.keyword.redhat_openshift_notm}} cluster.
+     - **entitlement_key** : Enter the **Entitled Registry key** to access the {{site.data.keyword.prodname_imas_short}} Image registry. See planning and preparing topic on how to get entitlement key.
        You can use an existing secret in **Secrets Manager** or add your entitlement key directly.
      - **mas_license** : Enter the {{site.data.keyword.prodname_imas_short}} License file content. See planning and preparing topic on how to get a license file.
        You can use an existing secret in **Secrets Manager** or add your license file content directly in `Base64` encoded format.
@@ -61,6 +61,8 @@ To deploy the {{site.data.keyword.prodname_imas_full}} deployable architecture t
 1. Click **Validate**. Validation takes a few minutes.
      {{site.data.keyword.cloud}} projects runs a Code Risk Analyzer scan that includes a supported set of Security and Compliance Center rules. Controls that are part of the deployable architecture and that are also supported by {{site.data.keyword.cloud}} projects are checked. Any extra controls that are not included in the list of supported Security and Compliance Center rules are not checked when you validate the configuration.
      If the validation fails because of the Code Risk Analyzer scan, you can troubleshoot the failure.
+     Make sure validation completes and > Validation successful message is displayed.
+     - In the **Approval pending** section, enter > I approve and click the **Approve** button.
 1. Deploy the configuration:
     After you validate your configuration, you can deploy it to your target account.
      1. Review the input values and make any necessary changes.
@@ -69,6 +71,6 @@ To deploy the {{site.data.keyword.prodname_imas_full}} deployable architecture t
        You are notified when the deployment is complete and with successful or failure message. In case of failure, refer the schematics log.
 1. Review the outputs from the deployable architecture.
    - **pipeline_execution_status** : If installation pipeline is successful then > Successful message is shown here. If there is a failure in any of pipeline task then that failed task information will be shown here.
-   - **maximo_admin_url** : If `pipeline_execution_status` is successful then admin URL to the deployed offering is displayed here.
+   - **maximo_admin_url** : The admin URL to the deployed offering is displayed here.
      Login credentials to this admin url can be found under **Workloads > Secrets** section on your {{site.data.keyword.redhat_openshift_notm}} cluster. Search for `<instance_id>-credentials-superuser name` under **Secrets** section. For example, if you entered `inst1` as input value to **mas_instance_id input** field then search for `inst1-credentials-superuser name` under **Secrets** section.
      {: note}
