@@ -32,25 +32,32 @@ To deploy the {{site.data.keyword.prodname_imas_full}} deployable architecture t
    {: note}
 
 1. Edit and validate the configuration:
- - Select your authentication method. You can use an existing secret in **Secrets Manager** or add your **API key** directly. For more information, see [Using an API key with secrets manager to authorize a project to deploy an architecure](/docs/secure-enterprise?topic=secure-enterprise-authorize-project).
+   - Select your authentication method. You can use an existing secret in **Secrets Manager** or add your **API key** directly.
+    For more information, see [Using an API key with secrets manager to authorize a project to deploy an architecure](/docs/secure-enterprise?topic=secure-enterprise-authorize-project).
    1. Enter values for following other required fields from the **Required** tab.
      - **cluster_id** : Enter Id of the target IBM Cloud {{site.data.keyword.redhat_openshift_notm}} cluster. This cluster ID can be found under the {{site.data.keyword.redhat_openshift_notm}} clusters section.
      - **region** : Enter region of the target IBM Cloud {{site.data.keyword.redhat_openshift_notm}} cluster.
-     - **entitlement_key** : Enter the **Entitled Registry key** to access the {{site.data.keyword.prodname_imas_short}} Image registry. See planning and preparing topic on how to get entitlement key.
+     - **entitlement_key** : Enter the **Entitled Registry key** to access the {{site.data.keyword.prodname_imas_short}} Image registry.
+       For more information about how to get entitlement key, see [Planning for {{site.data.keyword.prodname_imas_short}} deployable architecture](/docs/maximo-application-suite?topic=maximo-application-suite-planning).
        You can use an existing secret in **Secrets Manager** or add your entitlement key directly.
+       {: tip}
+
      - **mas_license** : Enter the {{site.data.keyword.prodname_imas_short}} License file content. See planning and preparing topic on how to get a license file.
        You can use an existing secret in **Secrets Manager** or add your license file content directly in `Base64` encoded format.
-     - **sls_license_id** : Enter the Suite License Server license ID. See planning and preparing topic on how to find an SLS license ID.
+     - **sls_license_id** : Enter the Suite License Server license ID.
+       For more information about how to find an SLS license ID, see [Planning for {{site.data.keyword.prodname_imas_short}} deployable architecture](/docs/maximo-application-suite?topic=maximo-application-suite-planning).
        You can use an existing secret in **Secrets Manager** or add your SLS License ID directly.
+       {: tip}
+
      - **deployment_flavour** : Enter core for {{site.data.keyword.prodname_imas_short}} Core deployment and enter manage for {{site.data.keyword.prodname_imas_short}} Core + Manage deployment.
      - **mas_instance_id** : Enter the {{site.data.keyword.prodname_imas_short}} instance ID for instance creation.
-      The **instance_id** should contain the name of the instance.
-      {: tip}
+       The **instance_id** should contain the name of the instance.
+       {: tip}
 
      - **contact_email** : Enter the email ID for Data Reporter Operator.
      - **contact_firstname** : Enter your first name to be used in the Data Reporter Operator.
      - **contact_lastname** : Enter your last name to be used in Data Reporter Operator.
-   1. Enter the following information in the **Optional** tab
+    1. Enter the following information in the **Optional** tab
      - **mas_workspace_id** : Enter the {{site.data.keyword.prodname_imas_short}} workspace Id. Default value is `wrkid1`.
      - **mas_workspace_name** : Enter the workspace name. Default value is wrkns1.
      - **storage_class_rwo** : Enter the storage class (read-write once). Default value is  `ibmc-vpc-block-retain-10iops-tier`.
