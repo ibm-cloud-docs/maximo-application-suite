@@ -25,22 +25,11 @@ You can deploy a deployable architecture from the {{site.data.keyword.cloud_notm
 To deploy the {{site.data.keyword.prodname_imas_full}} deployable architecture through the {{site.data.keyword.cloud_notm}} catalog, follow these steps:
 
 1. Make sure that you comply with the prerequisites in the [planning](/docs/maximo-application-suite?topic=maximo-application-suite-planning) topic.
-
-1. Go to the {{site.data.keyword.cloud}} catalog and search for {{site.data.keyword.prodname_imas_short}}.
-
-1. In the search result, click the **{{site.data.keyword.prodname_imas_short}} deployable architecture** tile to open the details.
-
-1. Select the latest product version in the **Architecture** section.
-
-1. Select the variation as **Existing Cluster**.
-
 1. Select the **Add to project** deployment type in **Deployment** options.
-
 1. Create a project by entering the name of your project, description, and specify a configuration name. Select the same Region where the existing cluster is running.
 1. Click Create.
-
- An existing project can be used by clicking **Add to existing** and then selecting the project and entering the configuration name.
- {: note}
+   An existing project can be used by clicking **Add to existing** and then selecting the project and entering the configuration name.
+   {: note}
 
 1. Edit and validate the configuration:
  - Select your authentication method. You can use an existing secret in **Secrets Manager** or add your **API key** directly. For more information, see [Using an API key with secrets manager to authorize a project to deploy an architecure](/docs/secure-enterprise?topic=secure-enterprise-authorize-project).
