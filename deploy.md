@@ -44,6 +44,9 @@ To deploy the {{site.data.keyword.prodname_imas_full}} deployable architecture t
        You can use an existing secret in **Secrets Manager** or add your SLS License ID directly.
      - **deployment_flavour** : Enter core for {{site.data.keyword.prodname_imas_short}} Core deployment and enter manage for {{site.data.keyword.prodname_imas_short}} Core + Manage deployment.
      - **mas_instance_id** : Enter the {{site.data.keyword.prodname_imas_short}} instance ID for instance creation.
+      The **instance_id** should contain the name of the instance.
+      {: tip}
+
      - **contact_email** : Enter the email ID for Data Reporter Operator.
      - **contact_firstname** : Enter your first name to be used in the Data Reporter Operator.
      - **contact_lastname** : Enter your last name to be used in Data Reporter Operator.
