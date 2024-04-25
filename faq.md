@@ -10,8 +10,9 @@ subcollection: maximo-application-suite
 
 content-type: faq
 
----
+production: false
 
+---
 
 {{site.data.keyword.attribute-definition-list}}
 
