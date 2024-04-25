@@ -16,7 +16,7 @@ subcollection: maximo-application-suite
 # Deploying {{site.data.keyword.redhat_openshift_notm}} Kubernetes Service VPC cluster
 {: #deploy-redhat-openshift-kubernetes-service}
 
-You can deploy a {site.data.keyword.redhat_openshift_notm}} Kubernetes Service VPC (Gen2 infrastructure) cluster using {{site.data.keyword.redhat_openshift_notm}} Container Platform on VPC landing zone DA from {{site.data.keyword.cloud_notm}} Public Catalog.
+You can deploy a {{site.data.keyword.redhat_openshift_notm}} Kubernetes Service VPC (Gen2 infrastructure) cluster using {{site.data.keyword.redhat_openshift_notm}} Container Platform on VPC landing zone DA from {{site.data.keyword.cloud_notm}} Public Catalog.
 {: shortdesc}
 
 1. Go to {{site.data.keyword.cloud_notm}} public catalog and search for {{site.data.keyword.redhat_openshift_notm}} Container Platform on VPC landing zone DA and click on it's tile.
@@ -26,7 +26,7 @@ You can deploy a {site.data.keyword.redhat_openshift_notm}} Kubernetes Service V
    - To add to existing project, select option, project, and enter either a new configuration name or use the default configuration name. Click **Add**.
 1. On **Edit configuration** page, under **Configure > Security** section, enter your api_key by either selecting from **Secrets Manager** or by entering it manually.
    If you are using the Secrets Mananger, ensure you have granted required permissions and created the API key. For more information, see [Using an API key with secrets manager to authorize a project to deploy an architecure](/docs/secure-enterprise?topic=secure-enterprise-authorize-project).
-1. Under **Required** section, select kube_version as 4.12_openshift. Select the region where you are planning to create this cluster. For prefix field, enter a unique name.
+1. Under **Required** section, select `kube_version` as `4.12_openshift`. Select the region where you are planning to create this cluster. For prefix field, enter a unique name.
 1. Under **Optional** section, click the edit option in front of `override_json_string` field and in the pop-up window, remove the double quotes ("") and enter the content that is provided in the `override.json` file and click **Save** button.
    For information about an example on different deployment options, see the [override.json](https://github.com/terraform-ibm-modules/terraform-ibm-landing-zone/blob/main/examples/override-example/override.json){: external} file.
    For more information about {{site.data.keyword.redhat_openshift_notm}} Container Platform on VPC landing zone DA, see [Overview](https://cloud.ibm.com/docs/secure-infrastructure-vpc?topic=secure-infrastructure-vpc-overview).

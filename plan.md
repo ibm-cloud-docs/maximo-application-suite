@@ -66,8 +66,8 @@ Before you install {{site.data.keyword.prodname_imas_short}} Core or {{site.data
 
 You must have a target {{site.data.keyword.redhat_openshift_notm}} cluster ready to install {{site.data.keyword.prodname_imas_short}}.
 If you do not already have one, then install it using {{site.data.keyword.redhat_openshift_notm}} Container Platform on VPC landing zone available on {{site.data.keyword.cloud_notm}} public catalog or refer to the {{site.data.keyword.redhat_openshift_notm}} Container Platform installation overview.
-Make sure your existing {{site.data.keyword.redhat_openshift_notm}} cluster has outbound access to `quay.io` registry site.
-For more information, see [Deploying {{site.data.keyword.redhat_openshift_notm}} Kubernetes Service (ROKS) VPC cluster](/docs/maximo-application-suite?topic=maximo-application-suite-deploy-redhat-openshift-kubernetes-service).
+- Make sure your existing {{site.data.keyword.redhat_openshift_notm}} cluster has outbound access to `quay.io` registry site.
+   For more information about steps to deploy, see [Deploying {{site.data.keyword.redhat_openshift_notm}} Kubernetes Service VPC cluster](/docs/maximo-application-suite?topic=maximo-application-suite-deploy-redhat-openshift-kubernetes-service).
 
 ### {{site.data.keyword.IBM}} Entitled Registry key
 {: #entitledregkey}
