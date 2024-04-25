@@ -16,8 +16,9 @@ subcollection: maximo-application-suite
 # Accessing {{site.data.keyword.prodname_imas_short}}
 {: #accessing}
 
-After you install {{site.data.keyword.prodname_imas_full}} Core or {{site.data.keyword.prodname_imas_short}} Core + Maximo Manage, you can find the admin_url ({{site.data.keyword.prodname_imas_short}} administrator URL) to it under the
-**Outputs** section on the project configuration page.
+After you install {{site.data.keyword.prodname_imas_full}} Core or {{site.data.keyword.prodname_imas_short}} Core + Maximo Manage, you can find the `admin_url` ({{site.data.keyword.prodname_imas_short}} administrator URL) to it under the **Outputs** section on the project configuration page.
+{: shortdesc}
+
 To find the login credentials for this URL, follow these steps:
 1. Connect to the {{site.data.keyword.redhat_openshift_full}} cluster.
 1. Select **Workloads > Secrets** from the navigation page.
