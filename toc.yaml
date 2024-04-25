@@ -67,8 +67,6 @@ toc:
           - topicgroup:
               label: Troubleshooting projects
               topics:
-              - topic: troubleshoot.md
-                navtitle: Troubleshooting failed validation when using project
               - include: ../secure-enterprise/ts-needs-attention.md
                 navtitle: How do I address a failed validation?
               - include: ../secure-enterprise/ts-deploy.md
