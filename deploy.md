@@ -17,6 +17,7 @@ subcollection: maximo-application-suite
 {: #deploying-da}
 
 You can deploy a deployable architecture from the {{site.data.keyword.cloud_notm}} catalog. You can choose among different deployment options, including with {{site.data.keyword.cloud_notm}} projects. [Learn about IaC deployments with projects](/docs/secure-enterprise?topic=secure-enterprise-understanding-projects).
+{: shortdesc}
 
 ## Deploying with {{site.data.keyword.cloud_notm}} projects
 {: #maximo-application-suite-deploy-cloud}
