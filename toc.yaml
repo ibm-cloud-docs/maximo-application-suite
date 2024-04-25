@@ -36,6 +36,7 @@ toc:
       id: plan
       topics:
       - plan.md
+      - deploy-openshift-kubernetes.md
 
   - navgroup:
       id: deploy
