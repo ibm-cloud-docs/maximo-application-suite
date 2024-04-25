@@ -37,7 +37,7 @@ IAM access roles are required to install this deployable architecture and create
 You need the following permissions for this deployable architecture:
 - Create services from {{site.data.keyword.cloud_notm}} catalog.
 - Create and modify {{site.data.keyword.cloud_notm}} VPC services, virtual server instances, networks, network prefixes, storage volumes, SSH keys, and security groups of this VPC.
-- Create and modify IBM Cloud direct links and IBM Cloud Transit Gateway.
+- Create and modify {{site.data.keyword.cloud_notm}} direct links and {{site.data.keyword.cloud_notm}} Transit Gateway.
 - Access existing Object Storage services.
 
 For information about configuring permissions, contact your {{site.data.keyword.cloud_notm}} account administrator.
@@ -60,6 +60,9 @@ Before you install {{site.data.keyword.prodname_imas_short}} Core or {{site.data
 1. Retrieve the {{site.data.keyword.cloud_notm}} API Key
 1. Get the {{site.data.keyword.prodname_imas_short}} license file
 1. Retireve the SLS license ID
+
+Platform and Service {{site.data.keyword.cloud_notm}} IAM roles and policies are only used for the VPC, {{site.data.keyword.redhat_openshift_notm}}, and other {{site.data.keyword.cloud_notm}} resources, while the users and roles for {{site.data.keyword.prodname_imas_short}} are defined and managed within the product.
+{: tip}
 
 ### {{site.data.keyword.redhat_openshift_notm}} Cluster
 {: #openshiftcluster}
