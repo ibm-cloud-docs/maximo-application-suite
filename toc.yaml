@@ -36,7 +36,6 @@ toc:
       id: plan
       topics:
       - plan.md
-      - deploy-openshift-kubernetes.md
 
   - navgroup:
       id: deploy
@@ -48,6 +47,8 @@ toc:
       topics:
       - topic: access.md
         navtitle: Accessing Maximo Application Suite
+      - topic: deploy-openshift-kubernetes.md
+        navtitle: Deploying Red Hat Openshift Kubernetes Service
 
   - navgroup:
       id: reference
