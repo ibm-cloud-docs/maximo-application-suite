@@ -55,32 +55,13 @@ production: false
 
 ---
 
-<!--
-The following line inserts all the attribute definitions. Don't delete.
--->
 {{site.data.keyword.attribute-definition-list}}
-
-<!--
-Don't include "reference architecture" in the following title.
-Specify a title based on a use case. If the architecture has a module
-or tile in the IBM Cloud catalog, match the title to the catalog. See
-https://test.cloud.ibm.com/docs/solution-as-code?topic=solution-as-code-naming-guidance.
--->
 
 # Deployable architecture for {{site.data.keyword.prodname_imas_short}}
 {: #deployable-architecture-components}
 {: toc-content-type="reference-architecture"}
 {: toc-use-case="Automation"}
 {: toc-version="1.0"}
-
-<!--
-The IDs, such as {: #title-id} are required for publishing this reference architecture in IBM Cloud Docs. Set unique IDs for each heading. Also include
-the toc attributes on the H1, repeating the values from the YAML header.
- :information_source: **Tip:** For more information about this template, see [Creating reference architectures](https://test.cloud.ibm.com/docs/writing?topic=writing-reference-architectures).
-
-Include a short description, summary, or overview in a single paragraph that follows the title.
-
-After the introduction, include a summary of the typical use case for the architecture. The use case might include the motivation for the architecture composition, business challenge, or target cloud environments.-->
 
 The IBM Maximo Application Suite® deployable architecture provides a simple automated way to get started with Maximo Application Suite on IBM Cloud®. Maximo Application Suite is a set of applications for asset monitoring, management, predictive maintenance, and reliability planning. It is a single, integrated cloud-based platform that uses Artificial Intelligence (AI), Internet of Things (IoT), and analytics to optimize performance, extend asset lifecycles, and reduce operational downtime and costs.
 {: overview}
@@ -94,9 +75,6 @@ The IBM Maximo Application Suite® deployable architecture provides a simple aut
 {: #design-concepts}
 
 ![Deployable architecure heat map of Maximo Application Suite](/terraform-ibm-modules/maximo-application-suite/reference-architecures/heat-map-mas.svg "Deployable architecure heat map of Maximo Application Suite"){: caption="Figure 2. Deployable architecure heat map of Maximo Application Suite" caption-side="bottom"}
-
-<!--For more information about creating a design requirements heat map image, see [Design requirements heat map](https://test.cloud.ibm.com/docs/architecture-framework?topic=architecture-framework-heat-map). -->
-
 
 ## Requirements
 {: #requirements}
