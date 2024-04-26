@@ -69,7 +69,7 @@ toc:
               label: Troubleshooting projects
               topics:
               - topic: troubleshoot-runbook.md
-                navtitle: Troubleshooting failed validation when using project
+                navtitle: Troubleshooting failed cluster configuration download
               - include: ../secure-enterprise/ts-needs-attention.md
                 navtitle: How do I address a failed validation?
               - include: ../secure-enterprise/ts-deploy.md

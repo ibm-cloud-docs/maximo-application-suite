@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-04-25"
+lastupdated: "2024-04-26"
 
 keywords: question about _xx_, _messageID_
 
@@ -14,8 +14,8 @@ content-type: troubleshoot
 
 {{site.data.keyword.attribute-definition-list}}
 
-# How do I address a failed validation when using projects?
-{: #troubleshoot-mas-da-failed-validation}
+# How do I address a failed cluster configuration download?
+{: #ts-failed-cluster-config-download}
 {: troubleshoot}
 
 
@@ -29,14 +29,14 @@ You see the following error messages when you try to download a cluster configur
 {: #download-error}
 
 In schematic logs, you see the following error entry:
-````Terraform plan | Error: [ERROR] Error downloading the cluster config [masdaapr24-management-cluster]: Request failed with status code: 404, ServerErrorResponse: {"incidentID":"9b8fd6b3-bd93-4449-90df-1f28ef7ff303","code":"G0004","description":"The specified cluster could not be found. If applicable, make sure that you target the correct account and resource group.","type":"General","recoveryCLI":"To list the clusters you have access to, run 'ibmcloud ks cluster ls'. To list the resource groups that you have access to, run 'ibmcloud resource groups'. To target the resource group, run 'ibmcloud target -g \u003cresource_group\u003e'."}
-Terraform plan |
-Terraform plan |   with data.ibm_container_cluster_config.cluster_config,
-Terraform plan |    1: data "ibm_container_cluster_config" "cluster_config" {
-Terraform plan error: Terraform PLAN errorexit status 1
 
-````
-{: codeblock}
+```htm
+Terraform plan | Error: [ERROR] Error downloading the cluster config [masdaapr24-management-cluster]: Request failed with status code: 404, ServerErrorResponse: {"incidentID":"9b8fd6b3-bd93-4449-90df-1f28ef7ff303","code":"G0004","description":"The specified cluster could not be found. If applicable, make sure that you target the correct account and resource group.","type":"General","recoveryCLI":"To list the clusters you have access to, run 'ibmcloud ks cluster ls'. To list the resource groups that you have access to, run 'ibmcloud resource groups'. To target the resource group, run 'ibmcloud target -g \u003cresource_group\u003e'."}
+Terraform plan |
+Terraform plan | with data.ibm_container_cluster_config.cluster_config,
+Terraform plan | 1: data "ibm_container_cluster_config" "cluster_config" {
+Terraform plan error: Terraform PLAN errorexit status 1
+```
 
 This error indicates that either the existing cluster id that you entered is incorrect or there is no ingress connection enabled for this cluster.
 {: tsCauses}
@@ -44,14 +44,14 @@ This error indicates that either the existing cluster id that you entered is inc
 ## Invalid value for variable deployment_flavour
 {: #invalid-value-error}
 
+```htm
 In schematic logs, you can see the following error entry:
-````Terraform plan |     variable "deployment_flavour" {
+Terraform plan | variable "deployment_flavour" {
 Terraform plan |     ├────────────────
 Terraform plan |     │ var.deployment_flavour is "core2"
 Terraform plan |
 Terraform plan | Invalid deployment flavour type! Valid values are 'core' or 'manage'
-````
-{: codeblock}
+```
 
 This error indicates that the value for deployment_flavour that you entered is other than core or manage. Make sure you enter these values in lower case without any quotes.
 {: tsCauses}

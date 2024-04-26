@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-04-17"
+lastupdated: "2024-04-26"
 
 keywords: deployable architecture, maximo application suite
 
@@ -14,12 +14,8 @@ content-type: release-note
 
 {{site.data.keyword.attribute-definition-list}}
 
-<!-- You must add the release-note content type in your attribute definitions AND to each release note H2. This will ensure that the release note entry is pulled into the notifications library. -->
-
 # Release notes for {{site.data.keyword.prodname_imas_short}} deployable architecure
 {: #release-notes}
-
-<!-- The title of your H1 should be Release notes for _service-name_, where _service-name_ is the non-trademarked short version keyref. Include your service name as a search keyword at the top of your Markdown file. See the example keywords above. -->
 
 Use these release notes to learn about the latest updates to {{site.data.keyword.prodname_imas_full}} deployable architecure that are grouped by month. Release notes are available for a minimum of three years.
 {: shortdesc}
