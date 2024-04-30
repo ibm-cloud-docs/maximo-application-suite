@@ -34,39 +34,8 @@ To deploy the {{site.data.keyword.prodname_imas_full}} deployable architecture t
 1. Edit and validate the configuration:
    - Select your authentication method. You can use an existing secret in **Secrets Manager** or add your **API key** directly.
     For more information, see [Using an API key with secrets manager to authorize a project to deploy an architecure](/docs/secure-enterprise?topic=secure-enterprise-authorize-project).
-   1. Enter values for following other required fields from the **Required** tab.
-       - **cluster_id** : Enter Id of the target IBM Cloud {{site.data.keyword.redhat_openshift_notm}} cluster. This cluster ID can be found under the {{site.data.keyword.redhat_openshift_notm}} clusters section.
-       - **region** : Enter region of the target IBM Cloud {{site.data.keyword.redhat_openshift_notm}} cluster.
-       - **entitlement_key** : Enter the **Entitled Registry key** to access the {{site.data.keyword.prodname_imas_short}} Image registry.
-         For more information about how to get entitlement key, see [Planning for {{site.data.keyword.prodname_imas_short}} deployable architecture](/docs/maximo-application-suite?topic=maximo-application-suite-planning).
-         You can use an existing secret in **Secrets Manager** or add your entitlement key directly.
-         {: tip}
-
-       - **mas_license** : Enter the {{site.data.keyword.prodname_imas_short}} License file content. See planning and preparing topic on how to get a license file.
-         You can use an existing secret in **Secrets Manager** or add your license file content directly in `Base64` encoded format.
-       - **sls_license_id** : Enter the Suite License Server license ID.
-         For more information about how to find an SLS license ID, see [Planning for {{site.data.keyword.prodname_imas_short}} deployable architecture](/docs/maximo-application-suite?topic=maximo-application-suite-planning).
-         You can use an existing secret in **Secrets Manager** or add your SLS License ID directly.
-         {: tip}
-
-       - **deployment_flavour** : Enter core for {{site.data.keyword.prodname_imas_short}} Core deployment and enter manage for {{site.data.keyword.prodname_imas_short}} Core + Manage deployment.
-       - **mas_instance_id** : Enter the {{site.data.keyword.prodname_imas_short}} instance ID for instance creation.
-         The **instance_id** should contain the name of the instance.
-         {: tip}
-
-       - **contact_email** : Enter the email ID for Data Reporter Operator.
-       - **contact_firstname** : Enter your first name to be used in the Data Reporter Operator.
-       - **contact_lastname** : Enter your last name to be used in Data Reporter Operator.
-   1. Enter the following information in the **Optional** tab
-       - **mas_workspace_id** : Enter the {{site.data.keyword.prodname_imas_short}} workspace Id. Default value is `wrkid1`.
-       - **mas_workspace_name** : Enter the workspace name. Default value is wrkns1.
-       - **storage_class_rwo** : Enter the storage class (read-write once). Default value is  `ibmc-vpc-block-retain-10iops-tier`.
-         Make sure this storage class is present under **Storage > StorageClasses** section on your {{site.data.keyword.redhat_openshift_notm}} cluster section.
-       - **storage_class_rwx** : Enter the storage class (read-write many). Default value is `ibmc-vpc-file-dp2`.
-         If you are planning to deploy {{site.data.keyword.prodname_imas_short}} Core + Manage then enter file storage class for DB2 and make sure this storage class is present under **Storage > StorageClasses** section on your {{site.data.keyword.redhat_openshift_notm}} cluster section.
-       - **pipeline_storage_class** : Enter the storage class for pipeline. Default value is `ibmc-vpc-block-retain-10iops-tier`.
-         Make sure this storage class is present under **Storage > StorageClasses** section on your {{site.data.keyword.redhat_openshift_notm}} cluster section.
-       - **cluster_config_endpoint_type** : Enter which type of endpoint to use for for cluster config access: `default`, `private`, `vpe`, `link`. The value `default` is used in the default endpoint of the cluster.
+   1. Enter values for other required fields in the **Required** tab.
+   1. Enter values for the fields in the **Optional** tab.
 1. Save the configuration.
 1. Click **Validate**. Validation takes a few minutes.
      {{site.data.keyword.cloud}} projects runs a Code Risk Analyzer scan that includes a supported set of Security and Compliance Center rules. Controls that are part of the deployable architecture and that are also supported by {{site.data.keyword.cloud}} projects are checked. Any extra controls that are not included in the list of supported Security and Compliance Center rules are not checked when you validate the configuration.

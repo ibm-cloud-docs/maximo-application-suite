@@ -21,13 +21,9 @@ Learn about the management responsibilities and terms and conditions that you ha
 
 - For more information about the responsibilities for you and for {{site.data.keyword.IBM}} when you use a deployable architecture, see [Understanding your responsibilities when you use deployable architectures](/docs/secure-enterprise?topic=secure-enterprise-responsibilities-deployable-architectures).
 - For a high-level view of the service types in {{site.data.keyword.cloud}} and the breakdown of responsibilities between the customer and {{site.data.keyword.IBM_notm}} for each type, see [Shared responsibilities for using {{site.data.keyword.cloud}} products](/docs/overview?topic=overview-shared-responsibilities).
-- For the overall terms of use, see [{{site.data.keyword.cloud_notm}} Terms and Notices](/docs/overview/terms-of-use?topic=overview-terms).
+- For the overall terms of use, see [{{site.data.keyword.cloud_notm}} Terms and Notices](/docs/overview?topic=overview-terms).
 
 Review the following sections for the specific responsibilities for you and for {{site.data.keyword.IBM_notm}} when you use the {{site.data.keyword.prodname_imas_short}} deployable architecture.
-
-<!-- If you plan to list resource responsibility (see resources listed in each table in the platform shared responsibilities topic linked earlier) instead of individual tasks, you do not need to include rows for Hypervisor, Physical Servers and memory, Physical storage, Physical network and devices, and Facilities and data centers unless you need to indicate a 'Shared' or 'Customer' responsibility for one of the areas within those resources. -->
-
-<!-- In the following sections, add tasks that are specific to your deployable architecture. Do not add tasks that are covered in the "Understanding your responsibilities when you use deployable architectures" that you link to earlier -->
 
 ## Incident and operations management
 {: #incident-and-ops}
@@ -45,15 +41,6 @@ Incident and operations management includes tasks such as monitoring, event mana
 
 ## Change management
 {: #change-management}
-
-<!-- Use this section description exactly as worded. -->
-<!-- When you have a topic that describes how a customer completes a task, link to it from the Your responsibilities column. -->
-
-<!--
-Review the first row of the change management table here. If your deployable architecture has compute resources that are not updated by your deployable architecture, include the row and list the resources that customers must update. (Red Hat OpenShift and Kubernetes are shown here as examples.)
-
-If your deployable architecture does not have compute resources that customers must update, delete the row.
--->
 
 Change management includes tasks such as deployment, configuration, upgrades, patching, configuration changes, and deletion.
 
@@ -87,9 +74,6 @@ Change management includes tasks such as deployment, configuration, upgrades, pa
 ## Identity and access management
 {: #iam-responsibilities}
 
-<!-- Use this section description exactly as worded. -->
-<!-- When you have a topic that describes how a customer completes a task, link to it from the Your responsibilities column. -->
-
 Identity and access management includes tasks such as authentication, authorization, access control policies, and approving, granting, and revoking access.
 
 |  | {{site.data.keyword.IBM_notm}} Responsibilities | Your Responsibilities |
@@ -103,25 +87,19 @@ Identity and access management includes tasks such as authentication, authorizat
 ## Security and regulation compliance
 {: #security-compliance}
 
-<!-- Use this section description exactly as worded. -->
-<!-- When you have a topic that describes how a customer completes a task, link to it from the Your responsibilities column. -->
-
 Security and regulation compliance includes tasks such as security controls implementation and compliance certification.
 
 |  | {{site.data.keyword.IBM_notm}} Responsibilities | Your Responsibilities |
 |----------|-----------------------|--------|
 |Apply patches and security updates to operating system in customer instances| {{site.data.keyword.IBM_notm}} notifies you of updates.  | Customer must apply all updates. |
 |Install software and OS patches into customer-managed virtual machines| N/A  | Customer must apply all patches. |
-|Meet security and compliance objectives| Provide a secure deployable architecture that complies with declared standards. For more information about data security, see [How do I know that my data is safe?](/docs/overview?topic=overview-security)  | Secure your workloads and data. Integrate tools into your toolchains that satisfy your security and compliance requirements. To learn more about securing your cloud apps, see [Security to safeguard and monitor your cloud apps](https://www.ibm.com/cloud/architecture/architecture/practices/securing-cloud-native-apps-risks-mitigation/){: external}. |
+|Meet security and compliance objectives| Provide a secure deployable architecture that complies with declared standards. For more information about data security, see [How do I know that my data is safe?](/docs/overview?topic=overview-security)  | Secure your workloads and data. Integrate tools into your toolchains that satisfy your security and compliance requirements. To learn more about securing your cloud apps, see [Security to safeguard and monitor your cloud apps](/docs/solution-tutorials?topic=solution-tutorials-cloud-e2e-security). |
 {: row-headers}
 {: caption="Table 4. Responsibilities for security and regulation compliance" caption-side="bottom"}
 {: summary="The rows are read from left to right. The first column describes the task that the customer or IBM might be responsibility for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
 
 ## Disaster recovery
 {: #disaster-recovery}
-
-<!-- Use this section description exactly as worded. -->
-<!-- When you have a topic that describes how a customer completes a task, link to it from the Your responsibilities column. -->
 
 Disaster recovery includes tasks such as providing dependencies on disaster recovery sites, provision disaster recovery environments, data and configuration backup, replicating data and configuration to the disaster recovery environment, and failover on disaster events.
 
