@@ -9,8 +9,6 @@ keywords:
 subcollection: maximo-application-suite
 
 ---
-{{site.data.keyword.attribute-definition-list}}
-
 
 # Maximo Application Suite deployment guide
 {: #readme}
