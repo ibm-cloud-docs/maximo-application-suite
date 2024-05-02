@@ -53,7 +53,7 @@ Terraform plan |
 Terraform plan | Invalid deployment flavour type! Valid values are 'core' or 'manage'
 ```
 
-This error indicates that the value for deployment_flavour that you entered is other than core or manage. Make sure you enter these values in lower case without any quotes.
+This error indicates that the value for deployment_flavour that you entered is other than core or manage. Make sure you enter these values in lower-case without any quotes.
 {: tsCauses}
 
 ## Other validation errors

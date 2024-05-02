@@ -46,7 +46,7 @@ To ensure that the support team can start investigating your case to provide a t
 ## Routing your support case expeditiously
 {: #support-case-routing}
 
-To get your support case routed correctly to speed up resolution, make sure that you select the right product when you open the case.
+To get your support case routed correctly to speed up resolution, make sure that you select the correct product when you open the case.
 
 If you're having issues getting the deployable architecture deployed, use the name of the deployable architecture as it is listed in the catalog.
 
