@@ -51,7 +51,7 @@ You need the following access to create a project and create project tooling res
 - The Editor role on the Projects service.
 - The Editor and Manager role on the Schematics service
 - The Viewer role on the resource group for the project
-   For more information, see [Assigning users access to projects](/docs/secure-enterprise?topic=secure-enterprise-access-project).
+    For more information, see [Assigning users access to projects](/docs/secure-enterprise?topic=secure-enterprise-access-project).
 
 Before you install {{site.data.keyword.prodname_imas_short}} Core or {{site.data.keyword.prodname_imas_short}} Core + Manage, you must complete the following tasks.
 
@@ -80,11 +80,11 @@ For more information about steps to deploy, see [Deploying {{site.data.keyword.r
 
 - Compliance policies
 
- If you validate against FS Cloud compliance policy or stricter policies which require private network use, deploying {{site.data.keyword.prodname_imas_short}} on {{site.data.keyword.redhat_openshift_notm}} with VPC landing zone require changes (via override.json) to the default landing zone configuration that will:
- 1. Open public gateway access to quay.io to pull {{site.data.keyword.prodname_imas_short}} operator images.
- 1. Open public ingress through transit gateway to {{site.data.keyword.prodname_imas_short}} endpoints for console and api running on the workload cluster.
+    If you validate against FS Cloud compliance policy or stricter policies which require private network use, deploying {{site.data.keyword.prodname_imas_short}} on {{site.data.keyword.redhat_openshift_notm}} with VPC landing zone require changes (via override.json) to the default landing zone configuration that will:
+    1. Open public gateway access to quay.io to pull {{site.data.keyword.prodname_imas_short}} operator images.
+    1. Open public ingress through transit gateway to {{site.data.keyword.prodname_imas_short}} endpoints for console and api running on the workload cluster.
 
- These changes cause the FS Cloud profile rules that {{site.data.keyword.redhat_openshift_notm}} with VPC landing zone is validated against, to fail in Security and Compliance Center.
+    These changes cause the FS Cloud profile rules that {{site.data.keyword.redhat_openshift_notm}} with VPC landing zone is validated against, to fail in Security and Compliance Center.
 
 ### {{site.data.keyword.IBM}} Entitled Registry key
 {: #entitledregkey}
