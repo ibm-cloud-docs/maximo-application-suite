@@ -51,5 +51,6 @@ To deploy the {{site.data.keyword.prodname_imas_full}} deployable architecture t
      Login credentials to this admin url can be found under the **Workloads > Secrets** section on your {{site.data.keyword.redhat_openshift_notm}} cluster. Search for `<instance_id>-credentials-superuser name` under **Secrets** section. For example, if you entered `inst1` as input value to **mas_instance_id input** field then search for `inst1-credentials-superuser name` under **Secrets** section.
      {: note}
 
-If the deployment fails, the process is exited. You can find the reason for failure in the schematics log.
+    If the deployment fails, the process is exited. You can find the reason for failure in the schematics log.
+
 For information about accessing the {{site.data.keyword.prodname_imas_short}}, see [Getting started](https://www.ibm.com/docs/en/mas-cd/continuous-delivery?topic=getting-started){: external}.
