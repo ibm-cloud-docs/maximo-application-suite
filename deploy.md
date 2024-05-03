@@ -53,4 +53,7 @@ To deploy the {{site.data.keyword.prodname_imas_full}} deployable architecture t
 
     If the deployment fails, the process is exited. You can find the reason for failure in the schematics log.
 
+    After you uninstall the application, some persistent volumes remain. You can choose to either retain or manually remove the data.
+    {: tip}
+
 For information about accessing the {{site.data.keyword.prodname_imas_short}}, see [Getting started](https://www.ibm.com/docs/en/mas-cd/continuous-delivery?topic=getting-started){: external}.

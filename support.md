@@ -35,9 +35,10 @@ To ensure that the support team can start investigating your case to provide a t
    a. In the {{site.data.keyword.cloud_notm}} console, go to **Schematics** > **Workspaces** > **deployable architecture instance**.
    b. Copy and paste into the case details the portion of the log that provides the architecture information. The following code is an example of what can be copied:
 
-      ```sh
+      ```json
       2023/04/06 18:11:43 Related Workspace: name=deploy-arch-ibm-slz-ocp-04-06-2023, sourcerelease=(not specified), sourceurl=https modules/terraform-ibm-landing-zone/archive/v3.1.2.tar.gz,tolder=terratorm-ibm-landing-zone-3.1.2/patterns/roks
-       ```
+      ```
+
 
 2. Provide the Terraform Log Analyzer summary from your project.
    a. In the {{site.data.keyword.cloud_notm}} console, go to **your project** > **Configurations** > **deployable architecture instance**.
