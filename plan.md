@@ -51,7 +51,7 @@ You need the following access to create a project and create project tooling res
 - The Editor role on the Projects service.
 - The Editor and Manager role on the Schematics service
 - The Viewer role on the resource group for the project
-   For more information, see [Assigning users access to projects](/docs/secure-enterprise?topic=secure-enterprise-access-project).
+    For more information, see [Assigning users access to projects](/docs/secure-enterprise?topic=secure-enterprise-access-project).
 
 Before you install {{site.data.keyword.prodname_imas_short}} Core or {{site.data.keyword.prodname_imas_short}} Core + Manage, you must complete the following tasks.
 
@@ -69,18 +69,22 @@ Platform and Service {{site.data.keyword.cloud_notm}} IAM roles and policies are
 
 You must have a target {{site.data.keyword.redhat_openshift_notm}} cluster ready to install {{site.data.keyword.prodname_imas_short}}.
 If you do not already have one, then install it using {{site.data.keyword.redhat_openshift_notm}} Container Platform on VPC landing zone available on {{site.data.keyword.cloud_notm}} public catalog or refer to the {{site.data.keyword.redhat_openshift_notm}} Container Platform installation overview.
-- Make sure your existing {{site.data.keyword.redhat_openshift_notm}} cluster has outbound access to `quay.io` registry site.
-   For more information about steps to deploy, see [Deploying {{site.data.keyword.redhat_openshift_notm}} Kubernetes Service VPC cluster](/docs/maximo-application-suite?topic=maximo-application-suite-deploy-redhat-openshift-kubernetes-service).
+
+Make sure your existing {{site.data.keyword.redhat_openshift_notm}} cluster has outbound access to `quay.io` registry site.
+{: note}
+
+For more information about steps to deploy, see [Deploying {{site.data.keyword.redhat_openshift_notm}} Kubernetes Service VPC cluster](/docs/maximo-application-suite?topic=maximo-application-suite-deploy-redhat-openshift-kubernetes-service).
 
 ### Known limitations
 {: #knownlimitations-rhocp}
 
 - Compliance policies
-   If you validate against FS Cloud compliance policy or stricter policies which require private network use, deploying {{site.data.keyword.prodname_imas_short}} on {{site.data.keyword.redhat_openshift_notm}} with VPC landing zone require changes (via override.json) to the default landing zone configuration that will:
-     1. Open public gateway access to quay.io to pull {{site.data.keyword.prodname_imas_short}} operator images.
-     1. Open public ingress through transit gateway to {{site.data.keyword.prodname_imas_short}} endpoints for console and api running on the workload cluster.
 
-   These changes cause the FS Cloud profile rules that {{site.data.keyword.redhat_openshift_notm}} with VPC landing zone is validated against, to fail in Security and Compliance Center.
+    If you validate against FS Cloud compliance policy or stricter policies which require private network use, deploying {{site.data.keyword.prodname_imas_short}} on {{site.data.keyword.redhat_openshift_notm}} with VPC landing zone require changes (via override.json) to the default landing zone configuration that will:
+    1. Open public gateway access to quay.io to pull {{site.data.keyword.prodname_imas_short}} operator images.
+    1. Open public ingress through transit gateway to {{site.data.keyword.prodname_imas_short}} endpoints for console and api running on the workload cluster.
+
+    These changes cause the FS Cloud profile rules that {{site.data.keyword.redhat_openshift_notm}} with VPC landing zone is validated against, to fail in Security and Compliance Center.
 
 ### {{site.data.keyword.IBM}} Entitled Registry key
 {: #entitledregkey}
@@ -93,20 +97,23 @@ For more information, see [Entitlement keys](https://myibm.ibm.com/products-serv
 {: #maslic}
 
 The {{site.data.keyword.prodname_imas_short}} license needs to be retrieved from the {{site.data.keyword.IBM}} License Key Center.
+
 If you do not already have your {{site.data.keyword.prodname_imas_short}} license key file, you can create and download it in the {{site.data.keyword.cloud_notm}} License Key Center.
 
-For more information, see [how to request specific license keys for IBM software products](https://licensing.subscribenet.com/control/ibmr/login){: external}.
+For more information, see [how to request specific license keys for IBM software products](https://www.ibm.com/support/pages/ibm-support-licensing-start-page){: external}.
 
 ### {{site.data.keyword.prodname_imas_short}} license ID
 {: #maslicid}
 
 A unique 12-character hexadecimal value in the first line of your {{site.data.keyword.prodname_imas_short}} license key file.
 For example, `SERVER sls-rlks-0.rlks 0242ac110002 27000`, where the 12-character hexadecimal value is `0242ac110002`.
+
 You can use a Secrets Manager or if you do not have the Secrets Manager installed, you can use base64 encoding. For more information, see [Base64 encoding and decoding](https://www.base64encode.org/){: external}.
 
 ### {{site.data.keyword.cloud_notm}} API Key
 {: #cloudapikey}
 
 Your {{site.data.keyword.cloud_notm}} account's API key. The user who owns this key must be assigned the Administrator role.
+
 If you do not have the API key, see
 [Managing user API keys](/docs/account?topic=account-userapikey&interface=ui).

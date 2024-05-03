@@ -19,4 +19,4 @@ The {{site.data.keyword.prodname_imas_full}} deployable architecture provides a 
 
 The deployable architecture automates the deployment of a standard client-managed {{site.data.keyword.prodname_imas_short}} instance with its dependencies. It can also automatically enable the {{site.data.keyword.IBM}} Maximo Manage application, which is ready to use. With {{site.data.keyword.prodname_imas_short}}, you can also access configurable CMMS, EAM, APM, and RCM applications, along with streamlined installation and administration, and a unified user experience with shared data and workflows.
 
-The deployable architecture can also be used as part of a larger solution, where it is included in a stack of other components.
+The deployable architecture can also be used as part of a wide-ranging solutions, where it is included in a stack of other components.
