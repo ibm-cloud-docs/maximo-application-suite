@@ -108,7 +108,7 @@ For more information, see [how to request specific license keys for IBM software
 A unique 12-character hexadecimal value in the first line of your {{site.data.keyword.prodname_imas_short}} license key file.
 For example, `SERVER sls-rlks-0.rlks 0242ac110002 27000`, where the 12-character hexadecimal value is `0242ac110002`.
 
-You can use a Secrets Manager or if you do not have the Secrets Manager installed, you can use base64 encoding. For more information, see [Base64 encoding and decoding](https://www.base64encode.org/){: external}.
+You can use a Secrets Manager to add the license key.
 
 ### {{site.data.keyword.cloud_notm}} API Key
 {: #cloudapikey}
