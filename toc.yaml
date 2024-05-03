@@ -60,8 +60,8 @@ toc:
       topics:
       - topic: support.md
         navtitle: Getting help and support
-      - topic: faq.md
-        navtitle: FAQs
+      # - topic: faq.md
+      #   navtitle: FAQs
       - topicgroup:
           label: Troubleshooting
           topics:
