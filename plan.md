@@ -89,7 +89,7 @@ For more information about steps to deploy, see [Deploying {{site.data.keyword.r
 ### {{site.data.keyword.IBM}} Entitled Registry key
 {: #entitledregkey}
 
-To access your software in the entitled registry, obtain an {{site.data.keyword.cloud_notm}} Entitled Registry key.
+To access your software in the entitled registry, obtain an {{site.data.keyword.IBM}} Entitled Registry key.
 
 For more information, see [Entitlement keys](https://myibm.ibm.com/products-services/containerlibrary){: external}.
 
