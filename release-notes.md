@@ -25,5 +25,5 @@ Use these release notes to learn about the latest updates to {{site.data.keyword
 {: release-note}
 
 Introducing {{site.data.keyword.prodname_imas_short}} deployable architecure
-:   You can now deploy {{site.data.keyword.prodname_imas_short}} Core or {{site.data.keyword.prodname_imas_short}} Core + Maximo Manage by using its deployable architecure that is listed on {{site.data.keyword.cloud}} public catalog.
+:   You can now deploy {{site.data.keyword.prodname_imas_short}} Core or {{site.data.keyword.prodname_imas_short}} Core + Maximo Manage by using its deployable architecture that is listed on {{site.data.keyword.cloud}} public catalog.
 The deployable architecture includes support for a {{site.data.keyword.redhat_openshift_full}} Kubernetes Service cluster with VPC Gen2 infrastructure.
