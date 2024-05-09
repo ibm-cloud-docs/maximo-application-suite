@@ -3,7 +3,7 @@ copyright:
   years: 2024
 lastupdated: "2024-05-09"
 
-keywords:
+keywords: maximo application suite, deployable architecture
 
 subcollection: deployable-reference-architectures
 version: 1.0
@@ -87,10 +87,4 @@ The following table outlines the products or services used in the architecture f
 | Service Management | IBM Cloud Monitoring | Apps and operational monitoring |
 |  | IBM Log Analysis | Apps and operational logs |
 |  | Activity Tracker Event Routing | Audit logs |
-| Other  use if there is  additional aspect(s)  Name Aspect | Cell content | Cell content |
 {: caption="Table 2. Components" caption-side="bottom"}
-
-## Compliance
-{: #compliance}
-
-_Optional section._ Feedback from users implies that architects want only the high-level compliance items and links off to control details that team members can review. Include the list of control profiles or compliance audits that this architecture meets. For controls, provide "learn more" links to the control library that is published in the IBM Cloud Docs. For audits, provide information about the compliance item.
