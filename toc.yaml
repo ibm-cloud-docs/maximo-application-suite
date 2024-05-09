@@ -29,6 +29,8 @@ toc:
   - navgroup:
       id: architecture
       topics:
+      - topic: mas-architecture.md #remove this file after testing on test site
+        navtitle: Reference architecture
       - include: ../reference-architectures/terraform-ibm-mas/mas-architecture.md
         navtitle: Maximo Application Suite
 
