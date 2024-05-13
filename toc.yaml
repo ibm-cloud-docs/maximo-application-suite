@@ -29,7 +29,7 @@ toc:
   - navgroup:
       id: architecture
       topics:
-      - include: ../reference-architectures/terraform-ibm-mas/reference-architecture/mas-architecture.md
+      - include: ../reference-architectures/terraform-ibm-mas/mas-architecture.md
         navtitle: Maximo Application Suite
 
   - navgroup:
