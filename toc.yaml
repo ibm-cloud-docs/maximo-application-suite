@@ -14,7 +14,7 @@ toc:
     deployable: true
     href: /docs/maximo-application-suite
     path: maximo-application-suite
-    description: 128 characters or less. The description should expand upon the name, but don't add extra marketese words that inflate the length. Focus on keywords that users would be skimming and/or searching for, including any key IBM branded terms covered in the solution.
+    description: Deployable architecture for Maximo Application Suite
     label: Maximo Application Suite
 
   entries:
@@ -29,7 +29,7 @@ toc:
   - navgroup:
       id: architecture
       topics:
-      - include: ../deployable-reference-architectures/terraform-ibm-mas/mas-architecture.md
+      - include: ../reference-architectures/terraform-ibm-mas/mas-architecture.md
         navtitle: Maximo Application Suite
 
   - navgroup:

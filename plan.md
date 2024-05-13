@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-04-17"
+lastupdated: "2024-05-09"
 
 keywords: deployable architecure, maximo application suite
 
@@ -62,16 +62,15 @@ Before you install {{site.data.keyword.prodname_imas_short}} Core or {{site.data
 1. Retireve the SLS license ID
 
 Platform and Service {{site.data.keyword.cloud_notm}} IAM roles and policies are only used for the VPC, {{site.data.keyword.redhat_openshift_notm}}, and other {{site.data.keyword.cloud_notm}} resources, while the users and roles for {{site.data.keyword.prodname_imas_short}} are defined and managed within the product.
-{: tip}
+{: note}
 
 ### {{site.data.keyword.redhat_openshift_notm}} Cluster
 {: #openshiftcluster}
 
 You must have a target {{site.data.keyword.redhat_openshift_notm}} cluster ready to install {{site.data.keyword.prodname_imas_short}}.
 If you do not already have one, then install it using {{site.data.keyword.redhat_openshift_notm}} Container Platform on VPC landing zone available on {{site.data.keyword.cloud_notm}} public catalog or refer to the {{site.data.keyword.redhat_openshift_notm}} Container Platform installation overview.
-
-Make sure your existing {{site.data.keyword.redhat_openshift_notm}} cluster has outbound access to `quay.io` registry site.
-{: note}
+ - Make sure that your existing {{site.data.keyword.redhat_openshift_notm}} cluster has outbound access to `quay.io` registry site.
+ - Make sure that the status of your {{site.data.keyword.redhat_openshift_notm}} cluster for the Master node is `Normal`, and that of Worker nodes, Add-ons, and Ingress is `Healthy`.
 
 For more information about steps to deploy, see [Deploying {{site.data.keyword.redhat_openshift_notm}} Kubernetes Service VPC cluster](/docs/maximo-application-suite?topic=maximo-application-suite-deploy-redhat-openshift-kubernetes-service).
 
@@ -89,7 +88,7 @@ For more information about steps to deploy, see [Deploying {{site.data.keyword.r
 ### {{site.data.keyword.IBM}} Entitled Registry key
 {: #entitledregkey}
 
-To access your software in the entitled registry, obtain an {{site.data.keyword.cloud_notm}} Entitled Registry key.
+To access your software in the entitled registry, obtain an {{site.data.keyword.IBM}} Entitled Registry key.
 
 For more information, see [Entitlement keys](https://myibm.ibm.com/products-services/containerlibrary){: external}.
 
@@ -108,7 +107,7 @@ For more information, see [how to request specific license keys for IBM software
 A unique 12-character hexadecimal value in the first line of your {{site.data.keyword.prodname_imas_short}} license key file.
 For example, `SERVER sls-rlks-0.rlks 0242ac110002 27000`, where the 12-character hexadecimal value is `0242ac110002`.
 
-You can use a Secrets Manager or if you do not have the Secrets Manager installed, you can use base64 encoding. For more information, see [Base64 encoding and decoding](https://www.base64encode.org/){: external}.
+You can use a Secrets Manager to add the license key.
 
 ### {{site.data.keyword.cloud_notm}} API Key
 {: #cloudapikey}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-04-26"
+lastupdated: "2024-05-09"
 
 keywords: question about _xx_, _messageID_
 
@@ -41,19 +41,19 @@ Terraform plan error: Terraform PLAN errorexit status 1
 This error indicates that either the existing cluster id that you entered is incorrect or there is no ingress connection enabled for this cluster.
 {: tsCauses}
 
-## Invalid value for variable deployment_flavour
+## Invalid value for variable deployment_flavor
 {: #invalid-value-error}
 
 ```htm
 In schematic logs, you can see the following error entry:
-Terraform plan | variable "deployment_flavour" {
+Terraform plan | variable "deployment_flavor" {
 Terraform plan |     ├────────────────
-Terraform plan |     │ var.deployment_flavour is "core2"
+Terraform plan |     │ var.deployment_flavor is "core2"
 Terraform plan |
-Terraform plan | Invalid deployment flavour type! Valid values are 'core' or 'manage'
+Terraform plan | Invalid deployment flavor type! Valid values are 'core' or 'manage'
 ```
 
-This error indicates that the value for deployment_flavour that you entered is other than core or manage. Make sure you enter these values in lower-case without any quotes.
+This error indicates that the value for deployment_flavor that you entered is other than core or manage. Make sure you enter these values in lower-case without any quotes.
 {: tsCauses}
 
 ## Other validation errors
