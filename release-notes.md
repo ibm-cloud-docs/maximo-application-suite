@@ -20,7 +20,7 @@ content-type: release-note
 Use these release notes to learn about the latest updates to {{site.data.keyword.prodname_imas_full}} deployable architecure that are grouped by month. Release notes are available for a minimum of three years.
 {: shortdesc}
 
-## May 2024
+## 15 May 2024
 {: #aprilrelease}
 {: release-note}
 
