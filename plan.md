@@ -85,6 +85,8 @@ For more information about steps to deploy, see [Deploying {{site.data.keyword.r
 
     These changes cause the FS Cloud profile rules that {{site.data.keyword.redhat_openshift_notm}} with VPC landing zone is validated against, to fail in Security and Compliance Center.
 
+- Version upgrades for the {{site.data.keyword.prodname_imas_short}} deployable architecture in {{site.data.keyword.cloud_notm}} projects are not supported.
+
 ### {{site.data.keyword.IBM}} Entitled Registry key
 {: #entitledregkey}
 
