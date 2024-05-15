@@ -1,0 +1,72 @@
+#  Name your file `toc.yaml`
+#  Make sure you include all nav file coding requirements, as defined in https://test.cloud.ibm.com/docs/writing?topic=writing-code-nav
+#  Anything with a fully qualified URL with `http` or `https` will get an external link icon added to the nav entry
+---
+toc:
+  properties:
+    subcollection: maximo-application-suite
+#    industry: industry-value
+#    use-case: use-case-value
+#    compliance: compliance-value
+    audience: solution
+    category: solution_docs
+    content-type: deployment
+    deployable: true
+    href: /docs/maximo-application-suite
+    path: maximo-application-suite
+    description: Deployable architecture for Maximo Application Suite
+    label: Maximo Application Suite
+
+  entries:
+  - navgroup:
+      id: overview
+      topics:
+      - topic: overview.md
+        navtitle: Overview
+      - topic: release-notes.md
+        navtitle: Release notes
+
+  - navgroup:
+      id: architecture
+      topics:
+      - include: ../deployable-reference-architectures/terraform-ibm-mas/mas-architecture.md
+        navtitle: Maximo Application Suite
+
+  - navgroup:
+      id: plan
+      topics:
+      - plan.md
+
+  - navgroup:
+      id: deploy
+      topics:
+      - deploy.md
+
+  - navgroup:
+      id: howto
+      topics:
+      - topic: access.md
+        navtitle: Accessing Maximo Application Suite
+      - topic: deploy-openshift-kubernetes.md
+        navtitle: Deploying Red Hat Openshift Kubernetes Service
+
+  - navgroup:
+      id: reference
+      topics:
+      - responsibilities.md
+
+  - navgroup:
+      id: help
+      topics:
+      - topic: support.md
+        navtitle: Getting help and support
+      - topicgroup:
+          label: Troubleshooting
+          topics:
+          - topicgroup:
+              label: Troubleshooting projects
+              topics:
+              - include: ../secure-enterprise/ts-needs-attention.md
+                navtitle: How do I address a failed validation?
+              - include: ../secure-enterprise/ts-deploy.md
+                navtitle: How do I address a failed deployment?
