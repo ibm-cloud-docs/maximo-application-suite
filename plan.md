@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-05-09"
+lastupdated: "2024-05-15"
 
 keywords: deployable architecure, maximo application suite
 

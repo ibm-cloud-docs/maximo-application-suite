@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-04-24"
+lastupdated: "2024-05-15"
 
 keywords: accessing, maximo application suite, deployable architecture, suite administrator
 
