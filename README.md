@@ -13,4 +13,4 @@ subcollection: maximo-application-suite
 # Maximo Application Suite deployment guide
 {: #readme}
 
-Documentation repository for IBM Maximo Application Suite deployment architecture on IBM Cloud
+Documentation repository for IBM Maximo Application Suite deployment architecture on IBM Cloud.
