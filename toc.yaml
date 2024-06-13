@@ -16,7 +16,6 @@ toc:
     path: maximo-application-suite
     description: Deployable architecture for Maximo Application Suite
     label: Maximo Application Suite
-
   entries:
   - navgroup:
       id: overview
@@ -25,23 +24,19 @@ toc:
         navtitle: Overview
       - topic: release-notes.md
         navtitle: Release notes
-
   - navgroup:
       id: architecture
       topics:
       - include: ../deployable-reference-architectures/terraform-ibm-mas/mas-architecture.md
         navtitle: Maximo Application Suite
-
   - navgroup:
       id: plan
       topics:
       - plan.md
-
   - navgroup:
       id: deploy
       topics:
       - deploy.md
-
   - navgroup:
       id: howto
       topics:
@@ -49,23 +44,25 @@ toc:
         navtitle: Accessing Maximo Application Suite
       - topic: deploy-openshift-kubernetes.md
         navtitle: Deploying Red Hat Openshift Kubernetes Service
-
   - navgroup:
       id: reference
       topics:
       - responsibilities.md
-
   - navgroup:
       id: help
       topics:
       - topic: support.md
         navtitle: Getting help and support
+#      - topic: faq.md
+#        navtitle: FAQs
       - topicgroup:
           label: Troubleshooting
           topics:
           - topicgroup:
               label: Troubleshooting projects
               topics:
+              - topic: troubleshoot-runbook.md
+                navtitle: Troubleshooting failed cluster configuration download
               - include: ../secure-enterprise/ts-needs-attention.md
                 navtitle: How do I address a failed validation?
               - include: ../secure-enterprise/ts-deploy.md
