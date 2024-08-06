@@ -71,7 +71,8 @@ You must have a target {{site.data.keyword.redhat_openshift_notm}} cluster ready
 If you do not already have one, then install it using {{site.data.keyword.redhat_openshift_notm}} Container Platform on VPC landing zone available on {{site.data.keyword.cloud_notm}} public catalog or refer to the {{site.data.keyword.redhat_openshift_notm}} Container Platform installation overview.
  - Make sure that your existing {{site.data.keyword.redhat_openshift_notm}} cluster has outbound access to `quay.io` registry site.
  - Make sure that the status of your {{site.data.keyword.redhat_openshift_notm}} cluster for the Master node is `Normal`, and that of Worker nodes, Add-ons, and Ingress is `Healthy`.
- - Make sure that your cluster nodes are configured to use a secondary storage of 300 GB with 10 iops (input/output operations per second).
+ - Make sure that your cluster nodes are configured to use a secondary storage of 300 GB with 10 iops (input/output operations per second). This is used for ephemeral storage and is configurable in the `override.json` file.
+    For more information, see [override.json](https://github.com/terraform-ibm-modules/terraform-ibm-mas/blob/24ddaef186771dc4996645c45de84d7ea500933d/override-json-file/override.json#L26_).
 
 For more information about steps to deploy, see [Deploying {{site.data.keyword.redhat_openshift_notm}} Kubernetes Service VPC cluster](/docs/maximo-application-suite?topic=maximo-application-suite-deploy-redhat-openshift-kubernetes-service).
 
