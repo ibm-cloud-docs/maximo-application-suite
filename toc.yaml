@@ -53,16 +53,12 @@ toc:
       topics:
       - topic: support.md
         navtitle: Getting help and support
-#      - topic: faq.md
-#        navtitle: FAQs
       - topicgroup:
           label: Troubleshooting
           topics:
           - topicgroup:
               label: Troubleshooting projects
               topics:
-              - topic: troubleshoot-runbook.md
-                navtitle: Troubleshooting failed cluster configuration download
               - include: ../secure-enterprise/ts-needs-attention.md
                 navtitle: How do I address a failed validation?
               - include: ../secure-enterprise/ts-deploy.md
