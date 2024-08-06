@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-05-15"
+lastupdated: "2024-04-26"
 
 keywords: deployable architecture, maximo application suite
 
@@ -20,7 +20,7 @@ content-type: release-note
 Use these release notes to learn about the latest updates to {{site.data.keyword.prodname_imas_full}} deployable architecure that are grouped by month. Release notes are available for a minimum of three years.
 {: shortdesc}
 
-## 15 May 2024
+## April 2024
 {: #aprilrelease}
 {: release-note}
 
