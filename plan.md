@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-08-06"
+lastupdated: "2024-10-07"
 
 keywords: deployable architecure, maximo application suite
 
@@ -59,7 +59,6 @@ Before you install {{site.data.keyword.prodname_imas_short}} Core or {{site.data
 1. Obtain an {{site.data.keyword.IBM}} Entitled Registry key
 1. Retrieve the {{site.data.keyword.cloud_notm}} API Key
 1. Get the {{site.data.keyword.prodname_imas_short}} license file
-1. Retireve the SLS license ID
 
 Platform and Service {{site.data.keyword.cloud_notm}} IAM roles and policies are only used for the VPC, {{site.data.keyword.redhat_openshift_notm}}, and other {{site.data.keyword.cloud_notm}} resources, while the users and roles for {{site.data.keyword.prodname_imas_short}} are defined and managed within the product.
 {: note}
@@ -70,6 +69,10 @@ Platform and Service {{site.data.keyword.cloud_notm}} IAM roles and policies are
 You must have a target {{site.data.keyword.redhat_openshift_notm}} cluster ready to install {{site.data.keyword.prodname_imas_short}}.
 If you do not already have one, then install it using {{site.data.keyword.redhat_openshift_notm}} Container Platform on VPC landing zone available on {{site.data.keyword.cloud_notm}} public catalog or refer to the {{site.data.keyword.redhat_openshift_notm}} Container Platform installation overview.
  - Make sure that your existing {{site.data.keyword.redhat_openshift_notm}} cluster has outbound access to `quay.io` registry site.
+
+     By default the outbound traffic is disabled for {{site.data.keyword.redhat_openshift_notm}} Container Platform 4.15.x. You must enable it on your cluster.
+     {: note}
+
  - Make sure that the status of your {{site.data.keyword.redhat_openshift_notm}} cluster for the Master node is `Normal`, and that of Worker nodes, Add-ons, and Ingress is `Healthy`.
  - Make sure that your cluster nodes are configured to use a secondary storage of 300 GB with 10 iops (input/output operations per second). This is used for ephemeral storage and is configurable in the `override.json` file.
     For more information, see [override.json](https://github.com/terraform-ibm-modules/terraform-ibm-mas/blob/24ddaef186771dc4996645c45de84d7ea500933d/override-json-file/override.json#L26_).
@@ -91,14 +94,6 @@ The {{site.data.keyword.prodname_imas_short}} license needs to be retrieved from
 If you do not already have your {{site.data.keyword.prodname_imas_short}} license key file, you can create and download it in the {{site.data.keyword.cloud_notm}} License Key Center.
 
 For more information, see [how to request specific license keys for IBM software products](https://www.ibm.com/support/pages/ibm-support-licensing-start-page){: external}.
-
-### {{site.data.keyword.prodname_imas_short}} license ID
-{: #maslicid}
-
-A unique 12-character hexadecimal value in the first line of your {{site.data.keyword.prodname_imas_short}} license key file.
-For example, `SERVER sls-rlks-0.rlks 0242ac110002 27000`, where the 12-character hexadecimal value is `0242ac110002`.
-
-You can use a Secrets Manager to add the license key.
 
 ### {{site.data.keyword.cloud_notm}} API Key
 {: #cloudapikey}

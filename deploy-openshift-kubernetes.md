@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-05-09"
+lastupdated: "2024-10-04"
 
 keywords: accessing, maximo application suite, deployable architecture, suite administrator
 
@@ -29,7 +29,7 @@ Make sure your existing {{site.data.keyword.redhat_openshift_notm}} cluster has 
    - To add to existing project, select option, project, and enter either a new configuration name or use the default configuration name. Click **Add**.
 1. On **Edit configuration** page, under **Configure > Security** section, enter your api_key by either selecting from **Secrets Manager** or by entering it manually.
    - If you are using the Secrets Manager, ensure you have granted required permissions and created the API key. For more information, see [Using an API key with secrets manager to authorize a project to deploy an architecure](/docs/secure-enterprise?topic=secure-enterprise-authorize-project).
-1. Under **Required** section, select `kube_version` as `4.12_openshift`. Select the region where you are planning to create this cluster. For prefix field, enter a unique name.
+1. Under **Required** section, select `kube_version` as `4.15_openshift`. Select the region where you are planning to create this cluster. For prefix field, enter a unique name.
    - For more information about supported {{site.data.keyword.redhat_openshift_notm}} versions, see [Software compatibility reports](https://www.ibm.com/software/reports/compatibility/clarity-reports/report/html/softwareReqsForProduct?deliverableId=2EF282223F984AE3ACC8D55433FB665C&osPlatforms=Mobile%20OS&duComponentIds=M020%7CC015%7CC013%7CC011%7CC014%7CC016%7CC012%7CC018%7CC017&mandatoryCapIds=30%7C9%7C42%7C184&optionalCapIds=30%7C9%7C20%7C26){: external}
 1. Under **Optional** section, click the edit option in front of `override_json_string` field and in the pop-up window, remove the double quotes ("") and enter the content that is provided in the `override.json` file and click **Save** button.
     - For information about an example on different deployment options, see the [override.json](https://github.com/terraform-ibm-modules/terraform-ibm-mas/blob/main/override-json-file/override.json){: external} file.

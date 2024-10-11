@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-05-09"
+lastupdated: "2024-10-09"
 
 subcollection: maximo-application-suite
 
@@ -35,7 +35,7 @@ Incident and operations management includes tasks such as monitoring, event mana
 |Monitor the status of a deployable architecture| {{site.data.keyword.IBM_notm}} provides the ability for customers to monitor the lifecycle of the deployable architecture.  | Use the [needs attention widget](/docs/secure-enterprise?topic=secure-enterprise-needs-attention-projects) or [enable Event Notifications](/docs/secure-enterprise?topic=secure-enterprise-event-notifications-events&interface=ui) to monitor events that specifically impact the lifecycle of your deployable architecture. |
 |Monitor the status of a product spun up by your deployable architecture| {{site.data.keyword.IBM_notm}} provides the ability for customers to monitor the lifecycle of the instances.  | Use the resource list, service instance pages, or the [Status](https://cloud.ibm.com/status){: external} page to monitor events that specifically impact your service instance. |
 {: row-headers}
-{: caption="Table 1. Responsibilities for incident and operations" caption-side="bottom"}
+{: caption="Responsibilities for incident and operations" caption-side="bottom"}
 {: summary="The rows are read from left to right. The first column describes the task that the customer or {{site.data.keyword.IBM_notm}} might be responsible for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
 
 
@@ -67,7 +67,7 @@ Change management includes tasks such as deployment, configuration, upgrades, pa
 | Pulling deployable architecture changes into a project| {{site.data.keyword.IBM_notm}} provides the ability for customers to update the version of a deployable architecture in a project if a new version becomes available. | Customers are notified when a [new deployable architecture version](/docs/secure-enterprise?topic=secure-enterprise-needs-attention-projects#na-version-update) is available so they can update their project. Customers can save their existing project data through an API, CLI, or by [exporting the project.json](/docs/secure-enterprise?topic=secure-enterprise-setup-project#json-export) from the **UI** tab. The saved information can be used as backup or as rollover plan if an issue exists. Customers can then test the deployable architecture changes by deploying in a development or test environment before they deploy to production.  These actions can all be completed within the same project. |
 |Provide notice of end of support| {{site.data.keyword.IBM_notm}} provides notice through regular channels.  | N/A |
 {: row-headers}
-{: caption="Table 2. Responsibilities for change management" caption-side="bottom"}
+{: caption="Responsibilities for change management" caption-side="bottom"}
 {: summary="The rows are read from left to right. The first column describes the task that the customer or IBM might be responsibility for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
 
 
@@ -81,7 +81,7 @@ Identity and access management includes tasks such as authentication, authorizat
 |Accessing deployed deployable architectures| {{site.data.keyword.IBM_notm}} provides the ability to control user access to resources provisioned through projects.  | Use Identity and Access Management (IAM) to [assign users access to projects](/docs/secure-enterprise?topic=secure-enterprise-access-project). |
 |Authorize a project to deploy a deployable architecture configuration| {{site.data.keyword.IBM_notm}} provides the ability to authorize a project to deploy a deployable architecture configuration.  | Choose an authentication method to authorize a project to deploy in an account. It’s recommended to use a trusted profile, but you can use an API key or an existing secret to [authorize a project to deploy](/docs/secure-enterprise?topic=secure-enterprise-authorize-project) in an account. |
 {: row-headers}
-{: caption="Table 3. Responsibilities for identity and access management" caption-side="bottom"}
+{: caption="Responsibilities for identity and access management" caption-side="bottom"}
 {: summary="The rows are read from left to right. The first column describes the task that the customer or IBM might be responsibility for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
 
 ## Security and regulation compliance
@@ -95,7 +95,7 @@ Security and regulation compliance includes tasks such as security controls impl
 |Install software and OS patches into customer-managed virtual machines| N/A  | Customer must apply all patches. |
 |Meet security and compliance objectives| Provide a secure deployable architecture that complies with declared standards. \n For more information about data security, see [How do I know that my data is safe?](/docs/overview?topic=overview-security)  | Secure your workloads and data. Integrate tools into your toolchains that satisfy your security and compliance requirements. \n To learn more about securing your cloud apps, see [Security to safeguard and monitor your cloud apps](/docs/solution-tutorials?topic=solution-tutorials-cloud-e2e-security). |
 {: row-headers}
-{: caption="Table 4. Responsibilities for security and regulation compliance" caption-side="bottom"}
+{: caption="Responsibilities for security and regulation compliance" caption-side="bottom"}
 {: summary="The rows are read from left to right. The first column describes the task that the customer or IBM might be responsibility for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
 
 ## Disaster recovery
@@ -108,5 +108,5 @@ Disaster recovery includes tasks such as providing dependencies on disaster reco
 |Meet disaster recovery objectives| {{site.data.keyword.IBM_notm}} follows best practices for disaster recovery. All {{site.data.keyword.IBM}} applications automatically recover and restart after any disaster event. \n For more information about disaster recovery, see the [{{site.data.keyword.IBM_notm}} Disaster Recovery Plan](/docs/overview?topic=overview-zero-downtime#disaster-recovery).  | Customers can help meet disaster recovery objectives by deploying their project in a development or test environment before they deploy to production. The customer does not have to take other actions to prepare for an event of a catastrophic failure in a region. \n For more information, see [Backing up and restoring {{site.data.keyword.prodname_imas_short}}](https://www.ibm.com/docs/en/mas-cd/continuous-delivery?topic=administering-backing-up-restoring-maximo-application-suite){: external} |
 |Meet high availability objectives| {{site.data.keyword.cloud}} is available globally and load balanced from a single URL. It is highly available and continues to run even if your resources are unavailable. \n For more information about high availability, see the [{{site.data.keyword.IBM}} service level objectives](/docs/overview?topic=overview-slo) and the [sample application architecture](/docs/overview?topic=overview-bcdr-app-recovery).  | You can increase the resiliency of the systems to environmental, hardware, or software faults or failure. Techniques and architectural patterns can minimize the impact on the overall system if a planned or unplanned system outage occurs. \n For more information about HA in {{site.data.keyword.prodname_imas_short}}, see [High Availability](https://www.ibm.com/docs/en/mas-cd/continuous-delivery?topic=planning-high-availability){: external} |
 {: row-headers}
-{: caption="Table 5. Responsibilities for disaster recovery" caption-side="bottom"}
+{: caption="Responsibilities for disaster recovery" caption-side="bottom"}
 {: summary="The rows are read from left to right. The first column describes the task that the customer or IBM might be responsibility for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
