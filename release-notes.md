@@ -4,7 +4,7 @@ copyright:
   years: 2024
 lastupdated: "2024-10-11"
 
-keywords: deployable architecture, maximo application suite
+keywords: deployable architecture, maximo application suite, automation
 
 subcollection: maximo-application-suite
 
