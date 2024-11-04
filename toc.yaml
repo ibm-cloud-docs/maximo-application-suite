@@ -53,8 +53,15 @@ toc:
       topics:
       - topic: support.md
         navtitle: Getting help and support
+      - topic: faq.md
+        navtitle: FAQs
       - topicgroup:
           label: Troubleshooting
           topics:
-              - include: ../secure-enterprise/secure-enterprise.md
-                navtitle: Troubleshooting for projects
+          - topicgroup:
+              label: Troubleshooting projects
+              topics:
+              - include: ../secure-enterprise/ts-needs-attention.md
+                navtitle: How do I address a failed validation?
+              - include: ../secure-enterprise/ts-deploy.md
+                navtitle: How do I address a failed deployment?
