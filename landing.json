@@ -1,7 +1,7 @@
 {
     "version": 2,
     "title": "Deployable architecture guide for Maximo Application Suite",
-    "introduction": "This is a description of what the user will be able to find in the content for your solution.",
+    "introduction": "IBM Maximo® Application Suite is an integrated asset lifecycle management solution that streamlines the maintenance, inspection and reliability of your critical equipment and infrastructure by leveraging generative AI, advanced analytics and the Internet of Things (IoT). This DA guide provides a simple automated way to get started with IBM Maximo Application Suite on IBM Cloud. ",
     "product_page": "https://www.ibm.com/products/maximo",
     "deployment_url": "https://cloud.ibm.com/catalog/architecture/deploy-arch-ibm-mas-fc308868-e530-4605-884e-e1b3f50b3b66-global",
     "section_topics": {
@@ -28,21 +28,6 @@
         }
       ]
     },
-    "section_highlights": [
-      {
-        "title": "Resource title",
-        "description": "Short description of resource content.",
-        "href": "https://www.example.ibm.com/link/to/resource",
-        "type": "blog"
-      },
-      {
-        "title": "Db2 Optimization Techniques for SAP Database Migration to the Cloud",
-        "description": "This IBM Redbook provides in-depth recommendations for the source system database export.",
-        "href": "https://www.redbooks.ibm.com/abstracts/sg248531.html",
-        "type": "redbook",
-        "recommended": true
-      }
-    ],
     "section_architectures": [
       {
         "title": "Deployable architecture for Maximo Application Suite",
