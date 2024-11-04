@@ -1,0 +1,38 @@
+{
+    "version": 2,
+    "title": "Deployable architecture guide for Maximo Application Suite",
+    "introduction": "IBM Maximo® Application Suite is an integrated asset lifecycle management solution that streamlines the maintenance, inspection and reliability of your critical equipment and infrastructure by leveraging generative AI, advanced analytics and the Internet of Things (IoT). This DA guide provides a simple automated way to get started with IBM Maximo Application Suite on IBM Cloud. ",
+    "product_page": "https://www.ibm.com/products/maximo",
+    "deployment_url": "https://cloud.ibm.com/catalog/architecture/deploy-arch-ibm-mas-fc308868-e530-4605-884e-e1b3f50b3b66-global",
+    "section_topics": {
+      "links": [
+        {
+          "title": "Overview for Maximo Application Suite deployable architecture",
+          "href": "/docs/maximo-application-suite?topic=maximo-application-suite-overview"
+        },
+        {
+          "title": "Planning for Maximo Application Suite deployable architecture",
+          "href": "/docs/maximo-application-suite?topic=maximo-application-suite-planning"
+        },
+        {
+          "title": "Deploying Maximo Application Suite deployable architecture",
+          "href": "/docs/maximo-application-suite?topic=maximo-application-suite-deploying-da"
+        },
+        {
+          "title": "Understanding your responsibilities when you use deployable architecture for Maximo Application Suite",
+          "href": "/docs/maximo-application-suite?topic=maximo-application-suite-deployable-architecure-responsibilities"
+        },
+        {
+          "title": "Getting help and support for Maximo Application Suite",
+          "href": "/docs/maximo-application-suite?topic=maximo-application-suite-help-and-support"
+        }
+      ]
+    },
+    "section_architectures": [
+      {
+        "title": "Deployable architecture for Maximo Application Suite",
+        "href": "/docs/maximo-application-suite?topic=maximo-application-suite-deployable-architecture-mas-components",
+        "deployable": true
+      }
+    ]
+  }
