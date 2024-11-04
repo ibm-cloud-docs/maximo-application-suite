@@ -56,10 +56,5 @@ toc:
       - topicgroup:
           label: Troubleshooting
           topics:
-          - topicgroup:
-              label: Troubleshooting projects
-              topics:
-              - include: https://cloud.ibm.com/docs/secure-enterprise?topic=secure-enterprise-troubleshooting-for-projects#ts-na-failures
-                navtitle: How do I address a failed validation?
-              - include: https://cloud.ibm.com/docs/secure-enterprise?topic=secure-enterprise-troubleshooting-for-projects#ts-deploy-failed
-                navtitle: How do I address a failed deployment?
+              - include: ../secure-enterprise/secure-enterprise.md
+                navtitle: Troubleshooting for projects
