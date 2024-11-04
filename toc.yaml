@@ -59,7 +59,7 @@ toc:
           - topicgroup:
               label: Troubleshooting projects
               topics:
-              - include: ts-needs-attention.md
+              - include: ../secure-enterprise/ts-needs-attention.md
                 navtitle: How do I address a failed validation?
-              - include: ts-deploy.md
+              - include: ../secure-enterprise/ts-deploy.md
                 navtitle: How do I address a failed deployment?
