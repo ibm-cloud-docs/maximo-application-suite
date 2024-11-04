@@ -18,7 +18,7 @@ subcollection: maximo-application-suite
 If you experience an issue or have questions when you deploy {{site.data.keyword.prodname_imas_short}}, you can use the following resources before you open a support case.
 {: shortdesc}
 
-* Review the [troubleshooting documentation](https://cloud.ibm.com//docs/maximo-application-suite?topic=maximo-application-suite-ts-na-failures) to troubleshoot and resolve common issues.
+* Review the [troubleshooting documentation](https://cloud.ibm.com/docs/maximo-application-suite?topic=maximo-application-suite-ts-na-failures) to troubleshoot and resolve common issues.
 * Check the status of the {{site.data.keyword.cloud_notm}} platform and resources by going to the [Status page](https://cloud.ibm.com/status){: external}.
 * Review the [GitHub issues](https://github.com/terraform-ibm-modules/terraform-ibm-mas){: external} to see whether other users experienced the same problem.
 
