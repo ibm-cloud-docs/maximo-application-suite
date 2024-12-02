@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-04-24"
+lastupdated: "2024-12-02"
 
 keywords: accessing, maximo application suite, deployable architecture, suite administrator
 
@@ -30,4 +30,4 @@ To find the login credentials for this URL, follow these steps:
 1. Retrieve the contents of `ca.crt` file, which is the public certificate for {{site.data.keyword.prodname_imas_short}}.
 1. After you import the public certificate into your browser's trusted store, paste the {{site.data.keyword.prodname_imas_short}} administrator URL into your browser and enter the authentication credentials to access the application.
 
-You can now log in to {{site.data.keyword.prodname_imas_short}} to deploy applications, create users, and specify configuration. For information, see [Getting started with {{site.data.keyword.prodname_imas_short}}](https://www.ibm.com/docs/en/mas-cd/continuous-delivery?topic=getting-started){: external}.
+You can now log in to {{site.data.keyword.prodname_imas_short}} to deploy applications, create users, and specify configuration. For information, see [Getting started with {{site.data.keyword.prodname_imas_short}}](https://www.ibm.com/docs/en/masv-and-l/continuous-delivery?topic=getting-started){: external}.
