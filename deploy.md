@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-10-11"
+lastupdated: "2024-12-02"
 
 keywords:
 
@@ -65,7 +65,7 @@ To deploy the {{site.data.keyword.prodname_imas_full}} Deployable Architecture (
        After you uninstall the application, some persistent volumes remain. You can choose to either retain or manually remove the data.
        {: tip}
 
-- For information about accessing {{site.data.keyword.prodname_imas_short}}, see [Getting started](https://www.ibm.com/docs/en/mas-cd/continuous-delivery?topic=getting-started){: external}.
+- For information about accessing {{site.data.keyword.prodname_imas_short}}, see [Getting started](https://www.ibm.com/docs/en/masv-and-l/continuous-delivery?topic=getting-started){: external}.
 
 ## Upgrading or updating with {{site.data.keyword.prodname_imas_short}} Deployable Architecture
 {: #upgrading-or-updating-maximo-application-suite}
